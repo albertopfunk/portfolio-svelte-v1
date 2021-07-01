@@ -5,6 +5,9 @@
 	import ContactSection from "../components/home/ContactSection.svelte";
 
 	let currentSection = null;
+  let introPosition;
+  let projectsPosition;
+  let contactPosition;
 </script>
 
 <svelte:head>
@@ -13,10 +16,10 @@
 
 <h1>Hello and welcome to my site!</h1>
 <PageNav {currentSection} />
-<IntroSection />
-<ProjectsSection />
-<ContactSection />
+<IntroSection bind:introPosition />
+<ProjectsSection bind:projectsPosition />
+<ContactSection bind:contactPosition />
 
 <style>
-  
+
 </style>

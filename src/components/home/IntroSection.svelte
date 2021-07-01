@@ -1,1 +1,15 @@
-<h2>Intro</h2>
+<script>
+  export let introPosition;
+</script>
+
+<section id="intro" bind:this="{introPosition}">
+  <h2>Hello Intro</h2>
+</section>
+
+<style>
+  section {
+    height: 100vh;
+    width: 100%;
+    border: solid;
+  }
+</style>
