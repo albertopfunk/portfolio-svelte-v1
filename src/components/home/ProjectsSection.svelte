@@ -1,15 +1,44 @@
 <script>
-  export let projectsPosition;
+	import { projectSectionData } from "../../data/projectsStore.js";
+
+	export let projectsPosition;
 </script>
 
-<section id="projects" data-section="projects" bind:this="{projectsPosition}">
-  <h2>Hello Projects</h2>
+<section id="projects">
+	<h2>Hello Projects</h2>
+
+  <div class="flex-container">
+    {#each $projectSectionData as project, index}
+      <article data-section="projects" bind:this={projectsPosition[index]}>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <a href="/projects/{project.slug}">{project.name}</a>
+        <img src="project.image" alt="" />
+      </article>
+    {/each}
+  </div>
+
 </section>
 
 <style>
-  section {
-    height: 100vh;
-    width: 100%;
-    border: solid;
+	section {
+		width: 100%;
+	}
+
+	article {
+		height: 50vh;
+		width: 100%;
+		border: solid;
+	}
+
+  @media (min-width: 1500px) {
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    article {
+      flex-basis: 45%;
+      flex-grow: 1;
+    }
   }
 </style>

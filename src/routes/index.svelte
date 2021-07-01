@@ -8,7 +8,7 @@
 
 	let currentSection = null;
 	let introPosition;
-	let projectsPosition;
+	let projectsPosition = [];
 	let contactPosition;
 
 	const options = {
@@ -24,7 +24,7 @@
   
     onMount(() => {
       observer.observe(introPosition);
-      observer.observe(projectsPosition);
+      projectsPosition.forEach(project => observer.observe(project));
       observer.observe(contactPosition);
     });
   
