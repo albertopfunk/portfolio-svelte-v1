@@ -2,7 +2,7 @@
   export let projectsPosition;
 </script>
 
-<section id="projects" bind:this="{projectsPosition}">
+<section id="projects" data-section="projects" bind:this="{projectsPosition}">
   <h2>Hello Projects</h2>
 </section>
 

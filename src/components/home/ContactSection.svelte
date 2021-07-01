@@ -2,7 +2,7 @@
   export let contactPosition;
 </script>
 
-<section id="contact" bind:this="{contactPosition}">
+<section id="contact" data-section="contact" bind:this="{contactPosition}">
   <h2>Hello Contact</h2>
 </section>
 

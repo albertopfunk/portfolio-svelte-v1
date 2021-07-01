@@ -2,7 +2,7 @@
   export let introPosition;
 </script>
 
-<section id="intro" bind:this="{introPosition}">
+<section id="intro" data-section="intro" bind:this="{introPosition}">
   <h2>Hello Intro</h2>
 </section>
 
