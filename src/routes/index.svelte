@@ -1,10 +1,10 @@
 <script>
   import { onMount } from "svelte";
   import { browser } from '$app/env';
-	import PageNav from "../components/home/PageNav.svelte";
-	import IntroSection from "../components/home/IntroSection.svelte";
-	import ProjectsSection from "../components/home/ProjectsSection.svelte";
-	import ContactSection from "../components/home/ContactSection.svelte";
+	import PageNav from "$lib/home/PageNav.svelte";
+	import IntroSection from "$lib/home/IntroSection.svelte";
+	import ProjectsSection from "$lib/home/ProjectsSection.svelte";
+	import ContactSection from "$lib/home/ContactSection.svelte";
 
 	let currentSection = null;
 	let introPosition;
@@ -57,11 +57,13 @@
 	<title>Alberto | Front-End Developer</title>
 </svelte:head>
 
-<h1>Hello and welcome to my site!</h1>
 <PageNav {currentSection} />
-<IntroSection bind:introPosition />
-<ProjectsSection bind:projectsPosition />
-<ContactSection bind:contactPosition />
+<main>
+  <h1>Hello and welcome to my site!</h1>
+  <IntroSection bind:introPosition />
+  <ProjectsSection bind:projectsPosition />
+  <ContactSection bind:contactPosition />
+</main>
 
 <style>
 </style>
