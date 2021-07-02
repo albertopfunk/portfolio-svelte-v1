@@ -1,7 +1,19 @@
 <script context="module">
 	export const load = ({ page }) => {
 		const project = page.params.project;
-		// check project matches or 404 page
+		const paramsCheck = {
+			"tech-profiles": true,
+			nomcue: true,
+			portfolio: true,
+			"rollup-start-fresh": true
+		};
+
+		if (!paramsCheck[project]) {
+			return {
+				status: 404,
+				error: new Error(`Could not find ${project}`)
+			};
+		}
 
 		return {
 			props: {
