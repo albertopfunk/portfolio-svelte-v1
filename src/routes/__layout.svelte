@@ -1,11 +1,8 @@
 <script>
-	import "../styles/reset.css"
+	import "../styles/reset.css";
+	import MainHeader from "$lib/MainHeader.svelte";
 </script>
 
-<nav aria-label="site-nav">
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/projects">Projects</a>
-</nav>
+<MainHeader />
 
-<slot></slot>
+<slot />
