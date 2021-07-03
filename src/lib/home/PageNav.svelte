@@ -47,9 +47,6 @@
 
 	li {
 		flex-grow: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		border: solid 1px transparent;
 		border-top-color: rgb(89, 170, 202);
 		border-right-color: rgb(89, 170, 202);
@@ -64,8 +61,11 @@
 	}
 
 	a {
-		flex-grow: 1;
-		text-align: center;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	@media (min-width: 1000px) {
@@ -86,14 +86,6 @@
 
 		li:last-child {
 			border-bottom-color: transparent;
-		}
-
-		a {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 	}
 
