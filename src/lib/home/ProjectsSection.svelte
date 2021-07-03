@@ -28,17 +28,5 @@
 	article {
 		height: 50vh;
 		width: 100%;
-		border: solid;
 	}
-
-  @media (min-width: 1500px) {
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    article {
-      flex-basis: 45%;
-      flex-grow: 1;
-    }
-  }
 </style>

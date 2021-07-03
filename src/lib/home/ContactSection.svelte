@@ -10,6 +10,5 @@
   section {
     height: 100vh;
     width: 100%;
-    border: solid;
   }
 </style>
