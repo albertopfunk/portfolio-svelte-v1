@@ -4,7 +4,7 @@ html {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5;
 	word-break: break-word;
-	background-color: #681048;
+	background-color: rgba(104, 16, 72, 1);
 	color: ghostwhite;
 	/*Prevent adjustments of font size Windows Phone/iOS*/
 	-ms-text-size-adjust: 100%;
@@ -25,7 +25,7 @@ html {
 	html {
 		scroll-behavior: smooth;
 	}
-	
+
 	*,
 	*:before,
 	*:after {

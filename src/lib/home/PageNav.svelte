@@ -37,7 +37,7 @@
 		right: 0;
 		top: 92%;
 		z-index: 10;
-		background-color: rgba(11, 3, 43, 0.95);
+		background-color: rgba(104, 16, 72, 0.1);
 	}
 
 	ul {

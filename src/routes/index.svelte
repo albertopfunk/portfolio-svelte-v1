@@ -1,6 +1,6 @@
 <script>
-  import { onMount } from "svelte";
-  import { browser } from '$app/env';
+	import { onMount } from "svelte";
+	import { browser } from "$app/env";
 	import PageNav from "$lib/home/PageNav.svelte";
 	import IntroSection from "$lib/home/IntroSection.svelte";
 	import ProjectsSection from "$lib/home/ProjectsSection.svelte";
@@ -17,40 +17,40 @@
 		threshold: 0.7
 	};
 
-  if (browser) {
-    // observe sections
-    // set current section if 70% of it is in viewport
-    const observer = new IntersectionObserver(onIntersection, options);
-  
-    onMount(() => {
-      observer.observe(introPosition);
-      projectsPosition.forEach(project => observer.observe(project));
-      observer.observe(contactPosition);
-    });
-  
-    function onIntersection(entries, observer) {
-      let current = entries.filter((entry) => entry.isIntersecting);
-  
-      if (current.length > 0) {
-        // uses elements data-section value
-        current = current[0].target.dataset.section;
-  
-        switch (current) {
-          case "intro":
-            currentSection = "intro";
-            break;
-          case "projects":
-            currentSection = "projects";
-            break;
-          case "contact":
-            currentSection = "contact";
-            break;
-          default:
-            currentSection = null;
-        }
-      }
-    }
-  }
+	if (browser) {
+		// observe sections
+		// set current section if 70% of it is in viewport
+		const observer = new IntersectionObserver(onIntersection, options);
+
+		onMount(() => {
+			observer.observe(introPosition);
+			projectsPosition.forEach((project) => observer.observe(project));
+			observer.observe(contactPosition);
+		});
+
+		function onIntersection(entries, observer) {
+			let current = entries.filter((entry) => entry.isIntersecting);
+
+			if (current.length > 0) {
+				// uses elements data-section value
+				current = current[0].target.dataset.section;
+
+				switch (current) {
+					case "intro":
+						currentSection = "intro";
+						break;
+					case "projects":
+						currentSection = "projects";
+						break;
+					case "contact":
+						currentSection = "contact";
+						break;
+					default:
+						currentSection = null;
+				}
+			}
+		}
+	}
 </script>
 
 <svelte:head>
@@ -59,28 +59,8 @@
 
 <PageNav {currentSection} />
 <main>
-  <h1>Hello and welcome to my site!</h1>
-  <IntroSection bind:introPosition />
-  <ProjectsSection bind:projectsPosition />
-  <ContactSection bind:contactPosition />
+	<h1>Hello and welcome to my site!</h1>
+	<IntroSection bind:introPosition />
+	<ProjectsSection bind:projectsPosition />
+	<ContactSection bind:contactPosition />
 </main>
-
-<style>
-  @media (min-width: 1000px) {
-    main {
-      padding-right: 30%;
-    }
-  }
-
-  @media (min-width: 1450px) {
-    main {
-      padding-right: 40%;
-    }
-  }
-
-  @media (min-width: 2050px) {
-    main {
-      padding-right: 50%;
-    }
-  }
-</style>
