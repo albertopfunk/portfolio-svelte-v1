@@ -66,4 +66,21 @@
 </main>
 
 <style>
+  @media (min-width: 1000px) {
+    main {
+      padding-right: 30%;
+    }
+  }
+
+  @media (min-width: 1450px) {
+    main {
+      padding-right: 40%;
+    }
+  }
+
+  @media (min-width: 2050px) {
+    main {
+      padding-right: 50%;
+    }
+  }
 </style>
