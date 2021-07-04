@@ -7,8 +7,8 @@
 <style>
   div {
     width: 100%;
-    height: 3px;
-    background-color: rgba(	66, 6, 241, .7);
+    height: 5px;
+    background-color: rgba(	66, 6, 241, .8);
   }
 
   svg {
