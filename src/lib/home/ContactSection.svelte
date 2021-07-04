@@ -10,7 +10,6 @@
 	section {
 		height: 100vh;
 		width: 100%;
-		background-color: rgba(0, 0, 40, 0.4);
 	}
 	@media (min-width: 1000px) {
 		section {

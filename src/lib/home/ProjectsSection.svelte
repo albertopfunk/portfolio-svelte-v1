@@ -22,7 +22,6 @@
 <style>
 	section {
 		width: 100%;
-		background-color: rgba(0, 0, 40, 0.2);
 	}
 
 	article {
