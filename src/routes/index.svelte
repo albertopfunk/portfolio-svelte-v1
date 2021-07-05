@@ -5,7 +5,7 @@
 	import IntroSection from "$lib/home/IntroSection.svelte";
 	import ProjectsSection from "$lib/home/ProjectsSection.svelte";
 	import ContactSection from "$lib/home/ContactSection.svelte";
-	import PalmTreesSpacer from "$lib/PalmTreesSpacer.svelte"
+	import PalmTreesSpacer from "$lib/PalmTreesSpacer.svelte";
 
 	let currentSection = null;
 	let introPosition;
@@ -71,7 +71,6 @@
 	<ProjectsSection bind:projectsPosition />
 	<PalmTreesSpacer />
 	<ContactSection bind:contactPosition />
-	<PalmTreesSpacer />
 </main>
 
 <style>
