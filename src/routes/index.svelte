@@ -61,7 +61,8 @@
 <PageNav {currentSection} />
 <main>
 	<div class="hero-intro">
-		<h1>Hello and welcome to my site!</h1>
+		<h1>Alberto Funk</h1>
+		<p>Front-End Developer</p>
 		<div class="hero-sun" />
 	</div>
 	<PalmTreesSpacer />
@@ -77,7 +78,28 @@
 	.hero-intro {
 		height: 35vh;
 		overflow: hidden;
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	h1 {
+		z-index: 2;
+		font-size: 3rem;
+		font-weight: bolder;
+		color: rgb(114,22,112);
+		-webkit-text-fill-color: rgb(114,22,112);
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: rgb(251,247,255);
+	}
+
+	p {
+		font-size: 1.5rem;
+		color: ghostwhite;
+		-webkit-text-fill-color: ghostwhite;
+		-webkit-text-stroke-width: .5px;
+		-webkit-text-stroke-color: rgba(114,22,112, .7);
 	}
 
 	.hero-sun {
@@ -164,10 +186,6 @@
 	@media (min-width: 1450px) {
 		.hero-intro {
 			height: 75vh;
-		}
-
-		.hero-sun {
-			top: 15%;
 		}
 	}
 </style>
