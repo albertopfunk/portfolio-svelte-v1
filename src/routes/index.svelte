@@ -112,61 +112,61 @@
 	}
 
 	@media (min-width: 400px) {
-		main > div {
+		.hero-intro {
 			height: 40vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 35%;
 		}
 	}
 
 	@media (min-width: 650px) {
-		main > div {
+		.hero-intro {
 			height: 45vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 30%;
 		}
 	}
 
 	@media (min-width: 850px) {
-		main > div {
+		.hero-intro {
 			height: 50vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 25%;
 		}
 	}
 
 	@media (min-width: 1050px) {
-		main > div {
+		.hero-intro {
 			height: 60vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 20%;
 		}
 	}
 
 	@media (min-width: 1250px) {
-		main > div {
+		.hero-intro {
 			height: 70vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 20%;
 		}
 	}
 
 	@media (min-width: 1450px) {
-		main > div {
+		.hero-intro {
 			height: 75vh;
 		}
 
-		div > div {
+		.hero-sun {
 			top: 15%;
 		}
 	}
