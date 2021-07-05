@@ -32,33 +32,17 @@
 <style>
 	nav {
 		position: fixed;
-		bottom: 0;
+		bottom: 8px;
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 20;
 		width: 90%;
 		overflow: hidden;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-		background: linear-gradient(
-			to bottom,
-			hsla(60, 100%, 60.98%, 0.9) 0%,
-			hsla(59.18, 100%, 61.01%, 0.9) 8.1%,
-			hsla(56.86, 100%, 61.08%, 0.9) 15.5%,
-			hsla(53.25, 100%, 61.18%, 0.9) 22.5%,
-			hsla(48.58, 100%, 61.32%, 0.9) 29%,
-			hsla(43.05, 100%, 61.49%, 0.9) 35.3%,
-			hsla(36.88, 100%, 61.67%, 0.9) 41.2%,
-			hsla(30.29, 100%, 61.86%, 0.9) 47.1%,
-			hsla(23.51, 100%, 62.06%, 0.9) 52.9%,
-			hsla(16.78, 100%, 62.25%, 0.9) 58.8%,
-			hsla(10.36, 100%, 62.43%, 0.9) 64.7%,
-			hsla(4.5, 100%, 62.6%, 0.9) 71%,
-			hsla(359.47, 100%, 62.4%, 0.9) 77.5%,
-			hsla(355.84, 100%, 60.08%, 0.9) 84.5%,
-			hsla(353.71, 100%, 58.57%, 0.9) 91.9%,
-			hsla(352.99, 100%, 58.04%, 0.9) 100%
-		);
+		background-color: rgb(	39, 2, 69);
+		border: 1px solid rgb(254,255,56);
+		outline: 1px solid rgb(254,255,56);
+		outline-offset: 3px;
+		box-shadow: 0 0 20px rgba(254, 255, 56, .8);	
 	}
 
 	ul {
@@ -69,10 +53,15 @@
 	li {
 		padding: 5px 0;
 		flex-grow: 1;
+		border-right: 1px solid rgb(254,255,56);
+	}
+
+	li:last-child {
+		border-right: none;
 	}
 
 	li.current {
-		background-color: rgba(39, 2, 69,.5);
+		color: rgb(254,24,211);
 	}
 
 	a {
@@ -82,4 +71,10 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	a:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+	}
+
 </style>
