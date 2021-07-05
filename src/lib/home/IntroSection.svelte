@@ -10,23 +10,7 @@
 	section {
 		height: 100vh;
 		width: 100%;
-	}
-
-	@media (min-width: 1000px) {
-		section {
-			padding-right: 30%;
-		}
-	}
-
-	@media (min-width: 1450px) {
-		section {
-			padding-right: 40%;
-		}
-	}
-
-	@media (min-width: 2050px) {
-		section {
-			padding-right: 50%;
-		}
+		padding-top: 10px;
+		text-align: center;
 	}
 </style>

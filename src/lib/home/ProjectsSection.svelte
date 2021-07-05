@@ -10,7 +10,7 @@
 	<div class="flex-container">
 		{#each $projectSectionData as project, index}
 			<article data-section="projects" bind:this={projectsPosition[index]}>
-				<h2>{project.name}</h2>
+				<h3>{project.name}</h3>
 				<p>{project.description}</p>
 				<!-- <a href="/projects/{project.slug}">{project.name}</a> -->
 				<img src="project.image" alt="" />
@@ -22,28 +22,12 @@
 <style>
 	section {
 		width: 100%;
+		padding-top: 10px;
+		text-align: center;
 	}
 
 	article {
 		height: 75vh;
 		width: 100%;
-	}
-
-	@media (min-width: 1000px) {
-		section {
-			padding-right: 30%;
-		}
-	}
-
-	@media (min-width: 1450px) {
-		section {
-			padding-right: 40%;
-		}
-	}
-
-	@media (min-width: 2050px) {
-		section {
-			padding-right: 50%;
-		}
 	}
 </style>
