@@ -15,10 +15,10 @@
 	}
 
 	h2 {
-		color: rgb(251,247,255);
-		-webkit-text-fill-color: rgb(251,247,255);
-		-webkit-text-stroke-width: .01px;
-		-webkit-text-stroke-color: rgba(66,6,241, .9);
+		color: rgb(251, 247, 255);
+		-webkit-text-fill-color: rgb(251, 247, 255);
+		-webkit-text-stroke-width: 0.01px;
+		-webkit-text-stroke-color: rgba(66, 6, 241, 0.9);
 		text-shadow: 6px 6px 0px #19012c;
 	}
 </style>

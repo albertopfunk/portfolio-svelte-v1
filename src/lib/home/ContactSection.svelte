@@ -5,8 +5,16 @@
 <section id="contact" data-section="contact" bind:this={contactPosition}>
 	<h2>Get in Touch</h2>
 	<div class="mountains-container">
-		<svg class="mountains" xmlns="http://www.w3.org/2000/svg" viewBox="1 91 1437 230">
-			<path fill="#19012c" fill-opacity="1" d="M0,128L144,224L288,128L432,256L576,96L720,160L864,288L1008,128L1152,128L1296,160L1440,96L1440,320L1296,320L1152,320L1008,320L864,320L720,320L576,320L432,320L288,320L144,320L0,320Z"></path>
+		<svg
+			class="mountains"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="1 91 1437 230"
+		>
+			<path
+				fill="#19012c"
+				fill-opacity="1"
+				d="M0,128L144,224L288,128L432,256L576,96L720,160L864,288L1008,128L1152,128L1296,160L1440,96L1440,320L1296,320L1152,320L1008,320L864,320L720,320L576,320L432,320L288,320L144,320L0,320Z"
+			/>
 		</svg>
 	</div>
 </section>
@@ -20,27 +28,27 @@
 	}
 
 	h2 {
-		color: rgba(254,255,56, .9);
-		-webkit-text-fill-color: rgba(254,255,56, .9);
-		-webkit-text-stroke-width: .01px;
-		-webkit-text-stroke-color: rgba(248,248,255, .5);
+		color: rgba(254, 255, 56, 0.9);
+		-webkit-text-fill-color: rgba(254, 255, 56, 0.9);
+		-webkit-text-stroke-width: 0.01px;
+		-webkit-text-stroke-color: rgba(248, 248, 255, 0.5);
 		text-shadow: 6px 6px 0px #19012c;
 	}
 
 	.mountains-container {
-    position: absolute;
+		position: absolute;
 		bottom: 0;
-    width: 100%;
-    height: 10%;
-    background-color: #19012c;
-  }
+		width: 100%;
+		height: 10%;
+		background-color: #19012c;
+	}
 
-  .mountains {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 80%;
+	.mountains {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 80%;
 		left: 0;
-    z-index: 10;
-  }
+		z-index: 10;
+	}
 </style>

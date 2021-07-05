@@ -3,7 +3,7 @@
 		"icon-fill": "white",
 		"icon-height": "1.3rem",
 		"icon-width": "1.3rem",
-		"icon-rotate": "rotate(90deg)",
+		"icon-rotate": "rotate(90deg)"
 	};
 
 	$: cssVarStyles = Object.entries(styles)

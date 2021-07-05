@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 html {
 	cursor: default;
 	box-sizing: border-box;
 	word-break: break-word;
-	background: rgb(25,1,44);
-	background: linear-gradient(to bottom,
-	rgb(25,1,44) 0%,
-	rgb(114,22,112) 50%,
-	rgb(11, 0, 19) 100%);
+	background: rgb(25, 1, 44);
+	background: linear-gradient(
+		to bottom,
+		rgb(25, 1, 44) 0%,
+		rgb(114, 22, 112) 50%,
+		rgb(11, 0, 19) 100%
+	);
 	color: ghostwhite;
 	/*Prevent adjustments of font size Windows Phone/iOS*/
 	-ms-text-size-adjust: 100%;
@@ -44,17 +46,18 @@ body {
 }
 
 body {
-	background-image: linear-gradient(0deg, 
-	rgba(254, 24, 211, .02) 16.67%, 
-	rgba(95, 83, 112, .02) 16.67%, 
-	rgba(95, 83, 112, .02) 50%, 
-	rgba(254, 24, 211, .02) 50%, 
-	rgba(254, 24, 211, .02) 66.67%, 
-	rgba(95, 83, 112, .02) 66.67%, 
-	rgba(95, 83, 112, .02) 100%);
-	background-size: 30.00px 10.00px;
+	background-image: linear-gradient(
+		0deg,
+		rgba(254, 24, 211, 0.02) 16.67%,
+		rgba(95, 83, 112, 0.02) 16.67%,
+		rgba(95, 83, 112, 0.02) 50%,
+		rgba(254, 24, 211, 0.02) 50%,
+		rgba(254, 24, 211, 0.02) 66.67%,
+		rgba(95, 83, 112, 0.02) 66.67%,
+		rgba(95, 83, 112, 0.02) 100%
+	);
+	background-size: 30px 10px;
 }
-
 
 /**
   * Remove all margin/padding on headers
@@ -110,8 +113,6 @@ a {
 	text-decoration: none;
 }
 
-
-
 /**
   * Heading and text typography
   */
@@ -121,12 +122,10 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
 	font-family: "Pacifico", Comic Sans MS, cursive;
 	letter-spacing: 2.5px;
 }
-
 
 p,
 a,
@@ -142,11 +141,10 @@ legend {
 	line-height: 1.7;
 }
 
-
 /**
   * headings/text font-size SMALL
   */
-	
+
 h1 {
 	font-size: 2.369rem;
 }
@@ -177,7 +175,6 @@ legend {
 	font-size: 1rem;
 }
 
-
 /**
   * headings/text font-size MEDIUM
   */
@@ -198,7 +195,7 @@ legend {
 		font-size: 1.333rem;
 		/*same size as text*/
 	}
-	
+
 	p,
 	a,
 	button,
@@ -233,7 +230,7 @@ legend {
 		font-size: 1.777rem;
 		/*same size as text*/
 	}
-	
+
 	p,
 	a,
 	button,
@@ -248,23 +245,16 @@ legend {
 	}
 }
 
-
-
-
-
-
-
 /**
   * bolder font weight for titles/important text
   */
 
-	b,
-	strong,
-	dt,
-	legend {
-		font-weight: bolder;
-	}
-
+b,
+strong,
+dt,
+legend {
+	font-weight: bolder;
+}
 
 /**
   * Remove the inner border and padding of focus outlines in Firefox.

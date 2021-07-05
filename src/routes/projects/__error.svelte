@@ -13,8 +13,8 @@
 	export let error;
 	export let status;
 
-  console.log(error.message)
-  console.log(status)
+	console.log(error.message);
+	console.log(status);
 </script>
 
 <svelte:head>

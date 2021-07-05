@@ -86,24 +86,24 @@
 
 	.hero-heading {
 		z-index: 2;
-		color: rgb(114,22,112);
-		-webkit-text-fill-color: rgb(114,22,112);
-		-webkit-text-stroke-width: .1px;
-		-webkit-text-stroke-color: rgb(251,247,255);
+		color: rgb(114, 22, 112);
+		-webkit-text-fill-color: rgb(114, 22, 112);
+		-webkit-text-stroke-width: 0.1px;
+		-webkit-text-stroke-color: rgb(251, 247, 255);
 	}
 
 	.hero-subheading {
 		color: ghostwhite;
 		-webkit-text-fill-color: ghostwhite;
-		-webkit-text-stroke-width: .5px;
-		-webkit-text-stroke-color: rgba(114,22,112, .7);
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: rgba(114, 22, 112, 0.7);
 	}
 
 	.hero-sun {
 		position: absolute;
 		top: 40%;
 		left: 50%;
-    transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
 		width: 100%;
 		height: auto;
 		padding-top: 100%;
@@ -127,7 +127,7 @@
 			hsla(353.71, 100%, 58.57%, 0.6) 91.9%,
 			hsla(352.99, 100%, 58.04%, 0.6) 100%
 		);
-		box-shadow: 0 5px 30px rgba(254, 255, 56, .8);		
+		box-shadow: 0 5px 30px rgba(254, 255, 56, 0.8);
 	}
 
 	@media (min-width: 400px) {

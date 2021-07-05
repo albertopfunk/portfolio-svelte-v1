@@ -38,11 +38,11 @@
 		z-index: 20;
 		width: 90%;
 		overflow: hidden;
-		background-color: rgb(	39, 2, 69);
-		border: 1px solid rgb(254,255,56);
-		outline: 1px solid rgb(254,255,56);
+		background-color: rgb(39, 2, 69);
+		border: 1px solid rgb(254, 255, 56);
+		outline: 1px solid rgb(254, 255, 56);
 		outline-offset: 3px;
-		box-shadow: 0 0 20px rgba(254, 255, 56, .8);	
+		box-shadow: 0 0 20px rgba(254, 255, 56, 0.8);
 	}
 
 	ul {
@@ -53,7 +53,7 @@
 	li {
 		padding: 5px 0;
 		flex-grow: 1;
-		border-right: 1px solid rgb(254,255,56);
+		border-right: 1px solid rgb(254, 255, 56);
 	}
 
 	li:last-child {
@@ -61,7 +61,7 @@
 	}
 
 	li.current {
-		color: rgb(254,24,211);
+		color: rgb(254, 24, 211);
 	}
 
 	a {
@@ -76,5 +76,4 @@
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
 	}
-
 </style>
