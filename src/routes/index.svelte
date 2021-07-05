@@ -78,24 +78,18 @@
 	.hero-intro {
 		height: 35vh;
 		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
+		text-align: center;
 	}
 
 	h1 {
 		z-index: 2;
-		font-size: 3rem;
-		font-weight: bolder;
 		color: rgb(114,22,112);
 		-webkit-text-fill-color: rgb(114,22,112);
-		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-width: .1px;
 		-webkit-text-stroke-color: rgb(251,247,255);
 	}
 
 	p {
-		font-size: 1.5rem;
 		color: ghostwhite;
 		-webkit-text-fill-color: ghostwhite;
 		-webkit-text-stroke-width: .5px;
@@ -136,6 +130,7 @@
 	@media (min-width: 400px) {
 		.hero-intro {
 			height: 40vh;
+			padding-top: 10px;
 		}
 
 		.hero-sun {
@@ -165,25 +160,11 @@
 
 	@media (min-width: 1050px) {
 		.hero-intro {
-			height: 60vh;
-		}
-
-		.hero-sun {
-			top: 20%;
+			height: 65vh;
 		}
 	}
 
 	@media (min-width: 1250px) {
-		.hero-intro {
-			height: 70vh;
-		}
-
-		.hero-sun {
-			top: 20%;
-		}
-	}
-
-	@media (min-width: 1450px) {
 		.hero-intro {
 			height: 75vh;
 		}
