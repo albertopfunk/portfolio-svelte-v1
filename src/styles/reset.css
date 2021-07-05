@@ -1,7 +1,6 @@
 html {
 	cursor: default;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5;
 	word-break: break-word;
 	background: rgb(25,1,44);
@@ -45,26 +44,16 @@ body {
 
 body {
 	background-image: linear-gradient(0deg, 
-	rgba(254, 24, 212, .02) 16.67%, 
+	rgba(254, 24, 211, .02) 16.67%, 
 	rgba(95, 83, 112, .02) 16.67%, 
 	rgba(95, 83, 112, .02) 50%, 
 	rgba(254, 24, 211, .02) 50%, 
 	rgba(254, 24, 211, .02) 66.67%, 
 	rgba(95, 83, 112, .02) 66.67%, 
 	rgba(95, 83, 112, .02) 100%);
-	background-size: 30.00px 30.00px;
+	background-size: 30.00px 10.00px;
 }
 
-body:after {
-	display: block;
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(	25, 1, 44, .1);
-}
 
 /**
   * Remove all margin/padding on headers
@@ -78,7 +67,6 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /**
@@ -121,22 +109,37 @@ a {
 	text-decoration: none;
 }
 
+
+
 /**
-  * bolder font weight for titles/important text
+  * Heading and text typography
   */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-family: "Pacifico", Comic Sans MS, Lucida Handwriting, cursive;
+}
+
+
+p,
+a,
+button,
+li,
+dd,
+dt,
+label,
 b,
 strong,
-dt,
 legend {
-	font-size: 0.95rem;
-	font-weight: bolder;
-	font-family: Georgia, "Times New Roman", Times, serif;
-
-	@media (min-width: 750px) {
-		font-size: 1rem;
-	}
+	font-family: "Roboto", sans-serif;
 }
+
+
 
 /**
   * headings/text font-size
@@ -174,9 +177,15 @@ h1 {
 }
 
 p,
+a,
+button,
 li,
 dd,
-label {
+label,
+b,
+strong,
+dt,
+legend {
 	font-size: 0.95rem;
 
 	@media (min-width: 750px) {
@@ -184,14 +193,18 @@ label {
 	}
 }
 
-a,
-button {
-	font-size: 0.85rem;
 
-	@media (min-width: 750px) {
-		font-size: 0.95rem;
+/**
+  * bolder font weight for titles/important text
+  */
+
+	b,
+	strong,
+	dt,
+	legend {
+		font-weight: bolder;
 	}
-}
+
 
 /**
   * Remove the inner border and padding of focus outlines in Firefox.
