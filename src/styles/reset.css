@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 html {
 	cursor: default;
 	box-sizing: border-box;
@@ -122,7 +124,7 @@ h4,
 h5,
 h6
 {
-	font-family: "Pacifico", Comic Sans MS, Lucida Handwriting, cursive;
+	font-family: "Pacifico", Comic Sans MS, cursive;
 }
 
 
@@ -140,40 +142,25 @@ legend {
 }
 
 
-
 /**
-  * headings/text font-size
+  * headings/text font-size SMALL
   */
-h4 {
-	font-size: 1rem;
-
-	@media (min-width: 750px) {
-		font-size: 1.1rem;
-	}
-}
-
-h3 {
-	font-size: 1.1rem;
-
-	@media (min-width: 750px) {
-		font-size: 1.3rem;
-	}
+	
+h1 {
+	font-size: 2.369rem;
 }
 
 h2 {
-	font-size: 1.25rem;
-
-	@media (min-width: 750px) {
-		font-size: 1.5rem;
-	}
+	font-size: 1.777rem;
 }
 
-h1 {
-	font-size: 1.3rem;
+h3 {
+	font-size: 1.333rem;
+}
 
-	@media (min-width: 750px) {
-		font-size: 1.6rem;
-	}
+h4 {
+	font-size: 1rem;
+	/*same size as text*/
 }
 
 p,
@@ -186,12 +173,84 @@ b,
 strong,
 dt,
 legend {
-	font-size: 0.95rem;
+	font-size: 1rem;
+}
 
-	@media (min-width: 750px) {
-		font-size: 1rem;
+
+/**
+  * headings/text font-size MEDIUM
+  */
+@media (min-width: 650px) {
+	h1 {
+		font-size: 3.157rem;
+	}
+
+	h2 {
+		font-size: 2.369rem;
+	}
+
+	h3 {
+		font-size: 1.777rem;
+	}
+
+	h4 {
+		font-size: 1.333rem;
+		/*same size as text*/
+	}
+	
+	p,
+	a,
+	button,
+	li,
+	dd,
+	label,
+	b,
+	strong,
+	dt,
+	legend {
+		font-size: 1.333rem;
 	}
 }
+
+/**
+  * headings/text font-size LARGE
+  */
+@media (min-width: 1250px) {
+	h1 {
+		font-size: 4.209rem;
+	}
+
+	h2 {
+		font-size: 3.157rem;
+	}
+
+	h3 {
+		font-size: 2.369rem;
+	}
+
+	h4 {
+		font-size: 1.777rem;
+		/*same size as text*/
+	}
+	
+	p,
+	a,
+	button,
+	li,
+	dd,
+	label,
+	b,
+	strong,
+	dt,
+	legend {
+		font-size: 1.777rem;
+	}
+}
+
+
+
+
+
 
 
 /**
