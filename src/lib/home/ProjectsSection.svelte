@@ -5,7 +5,7 @@
 </script>
 
 <section id="projects">
-	<h2>Hello Projects</h2>
+	<h2>Current Projects</h2>
 
 	<div class="flex-container">
 		{#each $projectSectionData as project, index}
@@ -31,6 +31,7 @@
 		-webkit-text-fill-color: rgb(25,1,44);
 		-webkit-text-stroke-width: .01px;
 		-webkit-text-stroke-color: rgba(254,255,56, .6);
+		text-shadow: 6px 6px 0px #19012c;
 	}
 
 	article {

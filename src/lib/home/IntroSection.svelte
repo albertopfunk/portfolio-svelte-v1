@@ -2,8 +2,8 @@
 	export let introPosition;
 </script>
 
-<section id="intro" data-section="intro" bind:this={introPosition}>
-	<h2>Hello Intro</h2>
+<section id="about-me" data-section="intro" bind:this={introPosition}>
+	<h2>About Me</h2>
 </section>
 
 <style>
@@ -19,5 +19,6 @@
 		-webkit-text-fill-color: rgb(251,247,255);
 		-webkit-text-stroke-width: .01px;
 		-webkit-text-stroke-color: rgba(66,6,241, .9);
+		text-shadow: 6px 6px 0px #19012c;
 	}
 </style>

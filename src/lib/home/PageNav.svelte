@@ -16,8 +16,8 @@
 <nav aria-label="page-nav">
 	<ul>
 		<li class={currentSection === "intro" ? "current" : ""}>
-			<a href="#intro">
-				<span> Intro </span>
+			<a href="#about-me">
+				<span>About Me</span>
 			</a>
 		</li>
 		<li class={currentSection === "projects" ? "current" : ""}>
