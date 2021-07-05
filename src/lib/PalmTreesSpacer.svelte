@@ -7,8 +7,12 @@
 <style>
   div {
     width: 100%;
-    height: 5px;
+    height: 10px;
     background-color: rgba(	66, 6, 241, .8);
+    background: linear-gradient(to bottom,
+    rgba(66, 6, 241, .9) 0%,
+    rgba(	222, 190, 253,.8) 90%,
+    rgba(251, 247, 255,.7) 100%);
   }
 
   svg {
@@ -17,7 +21,7 @@
     position: absolute;
     bottom: 0;
     z-index: 10;
-    fill: rgba(135, 26, 133, .8);
+    fill: rgba(135, 26, 133, .85);
   }
 
   svg.left {
