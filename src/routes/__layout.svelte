@@ -1,8 +1,8 @@
 <script>
 	import "../styles/reset.css";
-	import MainHeader from "$lib/MainHeader.svelte";
+	// import MainHeader from "$lib/MainHeader.svelte";
 </script>
 
-<MainHeader />
+<!-- <MainHeader /> -->
 
 <slot />

@@ -12,7 +12,7 @@
 			<article data-section="projects" bind:this={projectsPosition[index]}>
 				<h2>{project.name}</h2>
 				<p>{project.description}</p>
-				<a href="/projects/{project.slug}">{project.name}</a>
+				<!-- <a href="/projects/{project.slug}">{project.name}</a> -->
 				<img src="project.image" alt="" />
 			</article>
 		{/each}
