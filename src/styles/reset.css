@@ -3,13 +3,12 @@
 html {
 	cursor: default;
 	box-sizing: border-box;
-	line-height: 1.5;
 	word-break: break-word;
 	background: rgb(25,1,44);
 	background: linear-gradient(to bottom,
-	rgba(25,1,44,1) 0%,
-	rgba(114,22,112,1) 50%,
-	rgba(25,1,44,1) 100%);
+	rgb(25,1,44) 0%,
+	rgb(114,22,112) 50%,
+	rgb(11, 0, 19) 100%);
 	color: ghostwhite;
 	/*Prevent adjustments of font size Windows Phone/iOS*/
 	-ms-text-size-adjust: 100%;
@@ -125,6 +124,7 @@ h5,
 h6
 {
 	font-family: "Pacifico", Comic Sans MS, cursive;
+	letter-spacing: 2.5px;
 }
 
 
@@ -139,6 +139,7 @@ b,
 strong,
 legend {
 	font-family: "Roboto", sans-serif;
+	line-height: 1.7;
 }
 
 

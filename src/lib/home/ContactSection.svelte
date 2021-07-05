@@ -10,7 +10,14 @@
 	section {
 		height: 100vh;
 		width: 100%;
-		padding-top: 10px;
+		padding-top: 15px;
 		text-align: center;
+	}
+
+	h2 {
+		color: rgb(254,255,56);
+		-webkit-text-fill-color: rgb(254,255,56);
+		-webkit-text-stroke-width: .02px;
+		-webkit-text-stroke-color: ghostwhite
 	}
 </style>

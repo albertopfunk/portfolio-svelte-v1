@@ -22,8 +22,15 @@
 <style>
 	section {
 		width: 100%;
-		padding-top: 10px;
+		padding-top: 15px;
 		text-align: center;
+	}
+
+	h2 {
+		color: rgb(25,1,44);
+		-webkit-text-fill-color: rgb(25,1,44);
+		-webkit-text-stroke-width: .01px;
+		-webkit-text-stroke-color: rgba(254,255,56, .6);
 	}
 
 	article {

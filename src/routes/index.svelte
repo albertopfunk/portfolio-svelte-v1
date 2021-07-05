@@ -61,8 +61,8 @@
 <PageNav {currentSection} />
 <main>
 	<div class="hero-intro">
-		<h1>Alberto Funk</h1>
-		<p>Front-End Developer</p>
+		<h1 class="hero-heading">Alberto Funk</h1>
+		<p class="hero-subheading">Front-End Developer</p>
 		<div class="hero-sun" />
 	</div>
 	<PalmTreesSpacer />
@@ -81,7 +81,7 @@
 		text-align: center;
 	}
 
-	h1 {
+	.hero-heading {
 		z-index: 2;
 		color: rgb(114,22,112);
 		-webkit-text-fill-color: rgb(114,22,112);
@@ -89,7 +89,7 @@
 		-webkit-text-stroke-color: rgb(251,247,255);
 	}
 
-	p {
+	.hero-subheading {
 		color: ghostwhite;
 		-webkit-text-fill-color: ghostwhite;
 		-webkit-text-stroke-width: .5px;
