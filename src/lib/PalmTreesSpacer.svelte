@@ -31,4 +31,14 @@
   svg.right {
     left: 0;
   }
+
+
+  @media (min-width: 1450px) {
+    div {
+      height: 15px;
+    }
+    svg {
+      width: 30%;
+    }
+  }
 </style>
