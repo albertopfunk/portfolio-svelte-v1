@@ -8,6 +8,7 @@
 	import PalmTreesSpacer from "$lib/PalmTreesSpacer.svelte";
 
 	let currentSection = null;
+	let heroPosition;
 	let introPosition;
 	let projectsPosition = [];
 	let contactPosition;
@@ -24,6 +25,7 @@
 		const observer = new IntersectionObserver(onIntersection, options);
 
 		onMount(() => {
+			observer.observe(heroPosition);
 			observer.observe(introPosition);
 			projectsPosition.forEach((project) => observer.observe(project));
 			observer.observe(contactPosition);
@@ -35,8 +37,10 @@
 			if (current.length > 0) {
 				// uses elements data-section value
 				current = current[0].target.dataset.section;
-
 				switch (current) {
+					case "hero":
+						currentSection = null;
+						break;
 					case "intro":
 						currentSection = "intro";
 						break;
@@ -60,7 +64,7 @@
 
 <PageNav {currentSection} />
 <main>
-	<div class="hero-intro">
+	<div class="hero-intro" data-section="hero" bind:this={heroPosition}>
 		<h1 class="hero-heading">Alberto Funk</h1>
 		<p class="hero-subheading">Front-End Developer</p>
 		<div class="hero-sun" />
