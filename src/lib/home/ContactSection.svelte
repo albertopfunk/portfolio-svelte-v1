@@ -20,10 +20,11 @@
 	}
 
 	h2 {
-		color: rgb(254,255,56);
-		-webkit-text-fill-color: rgb(254,255,56);
-		-webkit-text-stroke-width: .02px;
-		-webkit-text-stroke-color: ghostwhite
+		color: rgba(254,255,56, .9);
+		-webkit-text-fill-color: rgba(254,255,56, .9);
+		-webkit-text-stroke-width: .01px;
+		-webkit-text-stroke-color: rgba(248,248,255, .5);
+		text-shadow: 6px 6px 0px #19012c;
 	}
 
 	.mountains-container {
