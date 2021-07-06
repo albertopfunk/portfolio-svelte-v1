@@ -35,7 +35,7 @@
 		bottom: 8px;
 		left: 50%;
 		transform: translate(-50%, 0);
-		z-index: 20;
+		z-index: 30;
 		width: 90%;
 		overflow: hidden;
 		background-color: rgb(39, 2, 69);
