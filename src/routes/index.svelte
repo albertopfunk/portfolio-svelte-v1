@@ -98,9 +98,9 @@
 	}
 
 	.hero-subheading {
+		line-height: 0;
 		color: rgb(251, 247, 255);
 		text-shadow: 2px 2px 0 rgb(114, 22, 112);
-		line-height: 0;
 	}
 
 	.hero-sun {
@@ -153,6 +153,10 @@
 		.hero-sun {
 			top: 30%;
 		}
+
+		.hero-subheading {
+			font-size: 1.333rem;
+		}
 	}
 
 	@media (min-width: 850px) {
@@ -174,6 +178,10 @@
 	@media (min-width: 1250px) {
 		.hero-intro {
 			height: 75vh;
+		}
+
+		.hero-subheading {
+			font-size: 1.777rem;
 		}
 	}
 </style>
