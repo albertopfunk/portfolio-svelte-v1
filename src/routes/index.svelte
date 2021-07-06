@@ -6,6 +6,7 @@
 	import ProjectsSection from "$lib/home/ProjectsSection.svelte";
 	import ContactSection from "$lib/home/ContactSection.svelte";
 	import PalmTreesSpacer from "$lib/PalmTreesSpacer.svelte";
+	import ScrollDownSpacer from "$lib/ScrollDownSpacer.svelte";
 
 	let currentSection = null;
 	let heroPosition;
@@ -16,7 +17,7 @@
 	const options = {
 		root: null,
 		rootMargin: "0px",
-		threshold: 0.7
+		threshold: 0.75
 	};
 
 	if (browser) {
@@ -64,12 +65,16 @@
 
 <PageNav {currentSection} />
 <main>
-	<div class="hero-intro" data-section="hero" bind:this={heroPosition}>
-		<h1 class="hero-heading">Alberto Funk</h1>
-		<p class="hero-subheading">Front-End Developer</p>
-		<div class="hero-sun" />
+	<div bind:this={heroPosition}>
+		<div class="hero-intro" data-section="hero">
+			<h1 class="hero-heading">Alberto Funk</h1>
+			<p class="hero-subheading">Front-End Developer</p>
+			<div class="hero-sun" />
+		</div>
+		<PalmTreesSpacer />
+		<ScrollDownSpacer />
 	</div>
-	<PalmTreesSpacer />
+
 	<IntroSection bind:introPosition />
 	<PalmTreesSpacer />
 	<ProjectsSection bind:projectsPosition />
@@ -93,10 +98,9 @@
 	}
 
 	.hero-subheading {
-		color: ghostwhite;
-		-webkit-text-fill-color: ghostwhite;
-		-webkit-text-stroke-width: 0.5px;
-		-webkit-text-stroke-color: rgba(114, 22, 112, 0.7);
+		color: rgb(251, 247, 255);
+		text-shadow: 2px 2px 0 rgb(114, 22, 112);
+		line-height: 0;
 	}
 
 	.hero-sun {
@@ -163,7 +167,7 @@
 
 	@media (min-width: 1050px) {
 		.hero-intro {
-			height: 65vh;
+			height: 60vh;
 		}
 	}
 
