@@ -36,6 +36,7 @@
 		min-height: 100vh;
 		width: 100%;
 		padding-top: 15px;
+		padding-bottom: 20%;
 		text-align: center;
 	}
 
@@ -72,6 +73,12 @@
 		bottom: 100%;
 		left: 0%;
 		z-index: 15;
+	}
+
+	@media (min-width: 850px) {
+		section {
+			padding-bottom: 15%;
+		}
 	}
 
 	@media (min-width: 1250px) {

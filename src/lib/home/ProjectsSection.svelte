@@ -23,6 +23,7 @@
 	section {
 		width: 100%;
 		padding-top: 15px;
+		padding-bottom: 20%;
 		text-align: center;
 	}
 
@@ -41,5 +42,11 @@
 	article {
 		min-height: 75vh;
 		width: 100%;
+	}
+
+	@media (min-width: 850px) {
+		section {
+			padding-bottom: 15%;
+		}
 	}
 </style>
