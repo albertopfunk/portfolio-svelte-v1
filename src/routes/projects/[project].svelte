@@ -2,10 +2,10 @@
 	export const load = ({ page }) => {
 		const project = page.params.project;
 		const paramsCheck = {
-			"tech-profiles": true,
-			nomcue: true,
-			portfolio: true,
-			"rollup-start-fresh": true
+			"tech-profiles": "Tech Profiles",
+			nomcue: "NomCue",
+			portfolio: "Portfolio",
+			"rollup-start-fresh": "Rollup Start Fresh"
 		};
 
 		if (!paramsCheck[project]) {
@@ -17,7 +17,10 @@
 
 		return {
 			props: {
-				project
+				project: {
+					param: project,
+					name: paramsCheck[project]
+				}
 			}
 		};
 	};
@@ -28,11 +31,11 @@
 </script>
 
 <svelte:head>
-	<title>{project} Project | Alberto</title>
+	<title>{project.name} Project | Alberto</title>
 </svelte:head>
 
 <main>
-	<h1>{project} page</h1>
+	<h1>{project.name} page</h1>
 	<p>Under construction</p>
 </main>
 
