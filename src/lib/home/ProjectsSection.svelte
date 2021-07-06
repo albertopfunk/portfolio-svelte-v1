@@ -34,6 +34,10 @@
 		text-shadow: 6px 6px 0px #19012c;
 	}
 
+	h3 {
+		text-shadow: 6px 6px 0px #19012c;
+	}
+
 	article {
 		min-height: 75vh;
 		width: 100%;
