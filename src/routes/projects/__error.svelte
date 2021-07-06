@@ -18,10 +18,16 @@
 </script>
 
 <svelte:head>
-	<title>Project Not Found</title>
+	<title>Project Not Found | Alberto</title>
 </svelte:head>
 
 <main>
-	<h1>Projects not found</h1>
-	<p>projects list</p>
+	<h1>Project not found error page</h1>
+	<p>Under construction</p>
 </main>
+
+<style>
+	main {
+		min-height: 100vh;
+	}
+</style>

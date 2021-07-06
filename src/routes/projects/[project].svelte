@@ -28,10 +28,16 @@
 </script>
 
 <svelte:head>
-	<title>Project</title>
+	<title>{project} Project | Alberto</title>
 </svelte:head>
 
 <main>
-	<h1>Project!</h1>
-	<p>{project}</p>
+	<h1>{project} page</h1>
+	<p>Under construction</p>
 </main>
+
+<style>
+	main {
+		min-height: 100vh;
+	}
+</style>

@@ -1,8 +1,14 @@
 <svelte:head>
-	<title>Projects</title>
+	<title>Projects | Alberto</title>
 </svelte:head>
 
 <main>
 	<h1>Projects page</h1>
-	<a href="/projects/hello">Project Hello</a>
+	<p>Under construction</p>
 </main>
+
+<style>
+	main {
+		min-height: 100vh;
+	}
+</style>
