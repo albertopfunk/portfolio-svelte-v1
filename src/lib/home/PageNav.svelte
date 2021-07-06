@@ -13,7 +13,11 @@
 	export let currentSection;
 </script>
 
-<nav aria-label="page-nav">
+<nav
+	aria-label="page-nav"
+	class:projects={currentSection === "projects"}
+	class:contact={currentSection === "contact"}
+>
 	<ul>
 		<li class={currentSection === "intro" ? "current" : ""}>
 			<a href="#about-me">
@@ -45,6 +49,18 @@
 		box-shadow: 0 0 20px rgba(254, 255, 56, 0.8);
 	}
 
+	nav.projects {
+		border-color: rgb(251, 247, 255);
+		outline-color: rgb(251, 247, 255);
+		box-shadow: 0 0 20px rgba(251, 247, 255, 0.8);
+	}
+
+	nav.contact {
+		border-color: rgb(114, 22, 112);
+		outline-color: rgb(114, 22, 112);
+		box-shadow: 0 0 20px rgba(114, 22, 112, 0.8);
+	}
+
 	ul {
 		height: 100%;
 		display: flex;
@@ -56,12 +72,20 @@
 		border-right: 1px solid rgb(254, 255, 56);
 	}
 
+	nav.projects li {
+		border-color: rgb(251, 247, 255);
+	}
+
+	nav.contact li {
+		border-color: rgb(114, 22, 112);
+	}
+
 	li:last-child {
 		border-right: none;
 	}
 
 	li.current {
-		color: rgb(254, 24, 211);
+		color: rgb(254, 255, 56);
 	}
 
 	a {
@@ -75,5 +99,11 @@
 	a:hover {
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		nav {
+			transition-delay: 0.4s;
+		}
 	}
 </style>
