@@ -35,7 +35,7 @@
 	}
 
 	article {
-		height: 75vh;
+		min-height: 75vh;
 		width: 100%;
 	}
 </style>
