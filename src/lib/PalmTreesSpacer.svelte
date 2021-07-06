@@ -25,7 +25,7 @@
 <style>
 	div {
 		width: 100%;
-		height: 10px;
+		height: 17px;
 		background-color: rgba(66, 6, 241, 0.8);
 		background: linear-gradient(
 			to bottom,
@@ -36,11 +36,11 @@
 	}
 
 	svg {
-		width: 40%;
+		width: 45%;
 		height: auto;
 		position: absolute;
-		bottom: 0;
-		z-index: 10;
+		bottom: 2px;
+		z-index: 20;
 		fill: rgba(135, 26, 133, 0.85);
 	}
 
@@ -52,12 +52,60 @@
 		left: 0;
 	}
 
-	@media (min-width: 1450px) {
+	@media (min-width: 500px) {
 		div {
-			height: 15px;
+			height: 23px;
+		}
+	}
+
+	@media (min-width: 650px) {
+		div {
+			height: 25px;
+		}
+		svg {
+			width: 40%;
+		}
+	}
+
+	@media (min-width: 850px) {
+		div {
+			height: 27px;
+		}
+		svg {
+			width: 37%;
+		}
+	}
+
+	@media (min-width: 1050px) {
+		div {
+			height: 30px;
+		}
+		svg {
+			width: 35%;
+			bottom: 3px;
+		}
+	}
+
+	@media (min-width: 1250px) {
+		div {
+			height: 35px;
+		}
+	}
+
+	@media (min-width: 1450px) {
+		svg {
+			width: 33%;
+		}
+	}
+
+	@media (min-width: 1650px) {
+		div {
+			height: 35px;
 		}
 		svg {
 			width: 30%;
 		}
 	}
+
+	
 </style>
