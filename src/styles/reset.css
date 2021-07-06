@@ -193,20 +193,6 @@ legend {
 
 	h4 {
 		font-size: 1.333rem;
-		/*same size as text*/
-	}
-
-	p,
-	a,
-	button,
-	li,
-	dd,
-	label,
-	b,
-	strong,
-	dt,
-	legend {
-		font-size: 1.333rem;
 	}
 }
 
@@ -228,7 +214,6 @@ legend {
 
 	h4 {
 		font-size: 1.777rem;
-		/*same size as text*/
 	}
 
 	p,
@@ -241,7 +226,7 @@ legend {
 	strong,
 	dt,
 	legend {
-		font-size: 1.777rem;
+		font-size: 1.333rem;
 	}
 }
 
