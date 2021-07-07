@@ -60,6 +60,91 @@ body {
 }
 
 /**
+  * block labels to stay above inputs
+  */
+
+label {
+	display: block;
+}
+
+/**
+  * Remove the margin and padding on controls/inputs
+  */
+
+button,
+input,
+fieldset,
+textarea {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+  * 1rem default for inputs to avoid zoom on ios
+  */
+
+input,
+textarea {
+	font-size: 1rem;
+}
+
+/**
+  * Correct the inability to style buttons in iOS and Safari.
+  */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+  * resetting fieldset
+  */
+
+fieldset {
+	min-width: 0;
+	width: fit-content;
+}
+
+/**
+  * 1. Remove the default vertical scrollbar in IE.
+  * 2. Change the resize direction in all browsers (opinionated).
+  */
+
+textarea {
+	overflow: auto; /* 1 */
+	resize: vertical; /* 2 */
+	resize: block; /* 2*/
+}
+
+/**
+  * Remove the inner border and padding of focus outlines in Firefox.
+  */
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+  * Restore the focus outline styles unset by the previous rule in Firefox.
+  */
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+  * Remove the additional :invalid styles in Firefox.
+  */
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
   * Remove all margin/padding on headers
   */
 
