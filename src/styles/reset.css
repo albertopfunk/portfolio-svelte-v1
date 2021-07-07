@@ -5,6 +5,7 @@ html {
 	box-sizing: border-box;
 	overflow-wrap: anywhere;
 	word-break: break-word;
+	hyphens: auto;
 	background: rgb(25, 1, 44);
 	background: linear-gradient(
 		to bottom,
