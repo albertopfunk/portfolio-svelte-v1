@@ -3,6 +3,7 @@
 html {
 	cursor: default;
 	box-sizing: border-box;
+	overflow-wrap: anywhere;
 	word-break: break-word;
 	background: rgb(25, 1, 44);
 	background: linear-gradient(
