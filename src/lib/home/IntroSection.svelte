@@ -10,12 +10,22 @@
 
 <section id="about-me" data-section="intro" bind:this={introPosition}>
 	<h2>About Me</h2>
-	<div class="container">
-		<div class="options">
-			<form>
-				<fieldset>
-					<legend>Bio Length</legend>
-					<div>
+
+	<div class="bio-container">
+		<div
+			class="visually-hidden"
+			aria-live="polite"
+			aria-atomic="true"
+			aria-relevant="text"
+		>
+			showing {introBioLength} bio
+		</div>
+
+		<form>
+			<fieldset>
+				<legend>Bio Length</legend>
+				<div class="options-container">
+					<div class="option">
 						<input
 							type="radio"
 							name="bio-length"
@@ -26,7 +36,7 @@
 						<label for="short">Short</label>
 					</div>
 
-					<div>
+					<div class="option">
 						<input
 							type="radio"
 							name="bio-length"
@@ -36,7 +46,7 @@
 						<label for="medium">Medium</label>
 					</div>
 
-					<div>
+					<div class="option">
 						<input
 							type="radio"
 							name="bio-length"
@@ -45,64 +55,89 @@
 						/>
 						<label for="long">Long</label>
 					</div>
-				</fieldset>
-			</form>
-		</div>
-		<div class="intro-short" class:hidden={introBioLength !== "short"}>
-			<ul>
-				<li>Lorem ipsum dolor sit amet consectetur</li>
-				<li>Donec et risus ullamcorper euismod justo sit amet</li>
-				<li>tristique urna. Mauris vulputate orci purus</li>
-				<li>Praesent tempor nisl id ornare cursus</li>
-				<li>Sed at libero pulvinar, interdum turpis eu</li>
+				</div>
+			</fieldset>
+		</form>
+
+		<div class="text-container short" class:hidden={introBioLength !== "short"}>
+			<ul class="text">
+				<li>Started career in the healthcare industry.</li>
+				<li>Tinkering on the web over the years.</li>
+				<li>Started coding by moving turtles with python.</li>
+				<li>Solidified skills by attending lambda school and self learning.</li>
+				<li>Working to break into this industry.</li>
 			</ul>
 		</div>
 
-		<div class="intro-medium" class:hidden={introBioLength !== "medium"}>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat
-				sem, eleifend sit amet convallis et, bibendum ut eros. Vivamus sodales
-				neque vel blandit pretium. Sed id diam nulla.
-			</p>
-			<p>
-				Sed at eros fringilla, fermentum velit quis, pellentesque nisl. Aliquam
-				posuere consequat ipsum, ullamcorper commodo turpis blandit quis.
-				Suspendisse id diam consectetur, sagittis libero et, volutpat ante.
-				Proin eleifend interdum eros, semper mattis augue lacinia sed.
-			</p>
-			<p>
-				Vivamus dictum nisi at sem sollicitudin molestie. Etiam blandit commodo
-				dapibus. Pellentesque ullamcorper, neque sed finibus eleifend, mauris
-				magna bibendum tellus, a pretium lacus lorem.
-			</p>
+		<div
+			class="text-container medium"
+			class:hidden={introBioLength !== "medium"}
+		>
+			<div class="text">
+				<p>
+					I started my career in the healthcare industry as an EMT, shortly
+					thereafter went into dispatching. I got conformable as a dispatcher, I
+					was also pretty good at it thanks to a great mentor. I knew this
+					wasn't a career I wanted though.
+				</p>
+				<p>
+					Throughout the years I started tinkering with different things on the
+					web. I would sell products online using different platforms. This
+					introduced me to things like online marketing, sales, seo, building
+					pages, creating eproducts, etc. My favorite of any of this was always
+					the building.
+				</p>
+				<p>
+					I started coding by moving turtles with python, then I quickly moved
+					into front end development. The idea to be able to build almost
+					anything I can think of drew me right in.
+				</p>
+				<p>
+					I solidified my skills and foundations by attending lambda school and
+					through self learning.
+				</p>
+				<p>Now I am here working to break into this industry.</p>
+			</div>
 		</div>
-		<div class="intro-long" class:hidden={introBioLength !== "long"}>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a quam
-				sapien. Fusce sapien purus, vestibulum nec dui eu, gravida aliquet
-				magna. Etiam lacinia dui est, ac semper massa tempor id. Aenean quis
-				sapien lacus. Proin sit amet metus hendrerit nulla congue convallis
-				iaculis a mi. Donec ac dignissim lectus. Vivamus imperdiet, magna a
-				vehicula commodo, velit eros consectetur arcu, non auctor nunc ex non
-				elit. Mauris a erat nisl. Suspendisse varius erat at odio interdum, ac
-				ornare metus dictum.
-			</p>
-			<p>
-				Maecenas eget iaculis metus, eu convallis arcu. Maecenas posuere
-				suscipit est aliquet commodo. Nam et ultricies libero. Proin congue
-				ornare est, eget euismod velit blandit ac. Quisque molestie commodo mi
-				ut dapibus. Vestibulum sed sollicitudin urna. Maecenas porttitor neque
-				vitae ligula fringilla volutpat. Morbi sed luctus diam, eu dictum mi.
-				Suspendisse ultricies nisl non auctor tristique. Mauris suscipit lectus
-				sit amet lectus lacinia, sit amet convallis mauris accumsan. Maecenas
-				pharetra tincidunt dui, eu ullamcorper arcu tristique sed. Quisque
-				bibendum ut odio a sollicitudin.
-			</p>
-			<p>
-				Proin maximus, sem at consectetur lacinia, lectus tellus tempus leo, a
-				sollicitudin quam lacus vel sem. Quisque rhoncus massa odio, vel tempus
-				erat iaculis aliquet. Etiam lobortis.
-			</p>
+		<div class="text-container long" class:hidden={introBioLength !== "long"}>
+			<div class="text">
+				<p>
+					I started my career in the healthcare industry as an EMT at 20(before
+					that I worked at random jobs, mostly in the food industry). I started
+					dispatching by being put there(light duty) for an injury by lifting a
+					patient wrong. One week to heal, turned into 3 months to cover while
+					they hire a new dispatcher, turned into a year, then 2. At this point
+					I got conformable, I was also pretty good at it thanks to a great
+					mentor. I knew this wasn't a career I wanted though, to me it was more
+					of a comfortable stable office job.
+				</p>
+				<p>
+					Throughout the years I started tinkering with different things on the
+					web. I would sell products online using different platforms like
+					funnel marketing, amazon, shopify, even using a MLM blog platform.
+					This introduced me to things like online marketing, sales, seo,
+					building pages, creating eproducts, etc. My favorite of any of this
+					was always the building. Building the funnel pages, marketing ads,
+					ebook+content, and especially the shopify stores, customizing all
+					those cool themes.
+				</p>
+				<p>
+					Eventually, naturally I think, all of this lead me into coding, I
+					started with python making turtles move, then I quickly moved into
+					front-end development, I was always limited to the themes and prebuilt
+					pages when it came to building, so the idea to be able to build almost
+					anything I can think of drew me right in.
+				</p>
+				<p>
+					I wanted to solidify my skills and foundation with coding. After a lot
+					of research I found lambda school, the things that attracted me to
+					lambda was that they were one of the only bootcamps that had a section
+					on computer science fundamentals and that I did not have to pay 10k+
+					up front to attend, also they were fully remote so that was a huge
+					convenience for me.
+				</p>
+				<p>Now I am here working to break into this industry.</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -111,15 +146,85 @@
 	section {
 		min-height: 100vh;
 		width: 100%;
-		padding-top: 15px;
+		padding: 20px 10px 20%;
 		text-align: center;
 	}
 
 	h2 {
-		color: rgb(251, 247, 255);
-		-webkit-text-fill-color: rgb(251, 247, 255);
-		-webkit-text-stroke-width: 0.01px;
-		-webkit-text-stroke-color: rgba(66, 6, 241, 0.9);
-		text-shadow: 6px 6px 0px #19012c;
+		-webkit-text-fill-color: var(--lighter-violet-color);
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: var(--violet-color);
+		text-shadow: 5px 5px 0px var(--darkest-violet-color);
+	}
+
+	.bio-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.options-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 25px;
+		padding: 10px;
+	}
+
+	.option {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.text-container {
+		text-align: left;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	ul {
+		list-style-type: circle;
+		list-style-type: disclosure-open;
+		list-style-position: inside;
+		list-style-image: url("triangle-sm.svg");
+	}
+
+	@media (min-width: 850px) {
+		section {
+			padding-bottom: 15%;
+		}
+
+		.bio-container {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			gap: unset;
+		}
+
+		form {
+			flex-basis: 15%;
+		}
+
+		.options-container {
+			flex-direction: column;
+		}
+
+		.text-container {
+			flex-basis: 75%;
+			max-width: 750px;
+		}
+	}
+
+	@media (min-width: 1250px) {
+		ul {
+			list-style-image: url("triangle-lg.svg");
+		}
 	}
 </style>
