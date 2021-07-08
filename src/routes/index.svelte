@@ -84,7 +84,7 @@
 
 <style>
 	.hero-intro {
-		height: 35vh;
+		height: 45vh;
 		overflow: hidden;
 		text-align: center;
 	}
@@ -95,14 +95,14 @@
 	}
 
 	.hero-subheading {
-		line-height: 0;
+		line-height: 0.9;
 		text-shadow: 0 0 30px rgba(var(--yellow-value), 0.8),
 			1px 1px 0px var(--darkest-violet-color);
 	}
 
 	.hero-sun {
 		position: absolute;
-		top: 40%;
+		top: 35%;
 		left: 50%;
 		transform: translate(-50%, 0);
 		width: 100%;
@@ -133,18 +133,13 @@
 
 	@media (min-width: 400px) {
 		.hero-intro {
-			height: 40vh;
 			padding-top: 10px;
-		}
-
-		.hero-sun {
-			top: 35%;
 		}
 	}
 
 	@media (min-width: 650px) {
 		.hero-intro {
-			height: 45vh;
+			height: 50vh;
 		}
 
 		.hero-sun {
@@ -152,23 +147,18 @@
 		}
 
 		.hero-subheading {
+			line-height: 0.4;
 			font-size: 1.333rem;
-		}
-	}
-
-	@media (min-width: 850px) {
-		.hero-intro {
-			height: 50vh;
-		}
-
-		.hero-sun {
-			top: 25%;
 		}
 	}
 
 	@media (min-width: 1050px) {
 		.hero-intro {
 			height: 60vh;
+		}
+
+		.hero-sun {
+			top: 25%;
 		}
 	}
 
@@ -178,6 +168,7 @@
 		}
 
 		.hero-subheading {
+			line-height: 0;
 			font-size: 1.777rem;
 		}
 	}
