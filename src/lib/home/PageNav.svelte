@@ -43,29 +43,29 @@
 		z-index: 30;
 		width: 90%;
 		overflow: hidden;
-		background-color: rgb(39, 2, 69);
-		border: 1px solid rgb(254, 255, 56);
-		outline: 1px solid rgb(254, 255, 56);
+		background-color: var(--dark-violet-color);
+		border: 1px solid var(--yellow-color);
+		outline: 1px solid var(--yellow-color);
 		outline-offset: 3px;
-		box-shadow: 0 0 20px rgba(254, 255, 56, 0.8);
+		box-shadow: 0 0 20px rgba(var(--yellow-value), 0.8);
 	}
 
 	nav.intro {
-		border-color: rgb(66, 6, 241);
-		outline-color: rgb(66, 6, 241);
-		box-shadow: 0 0 20px rgba(66, 6, 241, 0.8);
+		border-color: var(--violet-color);
+		outline-color: var(--violet-color);
+		box-shadow: 0 0 20px rgba(var(--violet-value), 0.8);
 	}
 
 	nav.projects {
-		border-color: rgb(251, 247, 255);
-		outline-color: rgb(251, 247, 255);
-		box-shadow: 0 0 20px rgba(251, 247, 255, 0.8);
+		border-color: var(--lighter-violet-color);
+		outline-color: var(--lighter-violet-color);
+		box-shadow: 0 0 20px rgba(var(--lighter-violet-value), 0.8);
 	}
 
 	nav.contact {
-		border-color: rgb(114, 22, 112);
-		outline-color: rgb(114, 22, 112);
-		box-shadow: 0 0 20px rgba(114, 22, 112, 0.8);
+		border-color: var(--darker-magenta-color);
+		outline-color: var(--darker-magenta-color);
+		box-shadow: 0 0 20px rgba(var(--darker-magenta-value), 0.8);
 	}
 
 	ul {
@@ -76,15 +76,19 @@
 	li {
 		padding: 5px 0;
 		flex-grow: 1;
-		border-right: 1px solid rgb(254, 255, 56);
+		border-right: 1px solid var(--yellow-color);
+	}
+
+	nav.intro li {
+		border-color: var(--violet-color);
 	}
 
 	nav.projects li {
-		border-color: rgb(251, 247, 255);
+		border-color: var(--lighter-violet-color);
 	}
 
 	nav.contact li {
-		border-color: rgb(114, 22, 112);
+		border-color: var(--darker-magenta-color);
 	}
 
 	li:last-child {
@@ -92,7 +96,7 @@
 	}
 
 	li.current {
-		color: rgb(254, 255, 56);
+		color: var(--yellow-color);
 	}
 
 	a {
@@ -110,7 +114,7 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		nav {
-			transition-delay: 0.4s;
+			transition: all 0.5s ease-out;
 		}
 	}
 </style>
