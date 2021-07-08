@@ -15,19 +15,20 @@
 
 <nav
 	aria-label="page-nav"
+	class:intro={currentSection === "intro"}
 	class:projects={currentSection === "projects"}
 	class:contact={currentSection === "contact"}
 >
 	<ul>
-		<li class={currentSection === "intro" ? "current" : ""}>
+		<li class:current={currentSection === "intro"}>
 			<a href="#about-me">
 				<span>About Me</span>
 			</a>
 		</li>
-		<li class={currentSection === "projects" ? "current" : ""}>
+		<li class:current={currentSection === "projects"}>
 			<a href="#projects"><span>Projects</span></a>
 		</li>
-		<li class={currentSection === "contact" ? "current" : ""}>
+		<li class:current={currentSection === "contact"}>
 			<a href="#contact"><span>Contact</span></a>
 		</li>
 	</ul>
@@ -47,6 +48,12 @@
 		outline: 1px solid rgb(254, 255, 56);
 		outline-offset: 3px;
 		box-shadow: 0 0 20px rgba(254, 255, 56, 0.8);
+	}
+
+	nav.intro {
+		border-color: rgb(66, 6, 241);
+		outline-color: rgb(66, 6, 241);
+		box-shadow: 0 0 20px rgba(66, 6, 241, 0.8);
 	}
 
 	nav.projects {
