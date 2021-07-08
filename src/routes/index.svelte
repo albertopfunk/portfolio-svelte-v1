@@ -67,7 +67,7 @@
 <main>
 	<div bind:this={heroPosition}>
 		<div class="hero-intro" data-section="hero">
-			<h1 class="hero-heading">Alberto Funk</h1>
+			<h1 class="hero-heading">Alberto Preciado</h1>
 			<p class="hero-subheading">Front-End Developer</p>
 			<div class="hero-sun" />
 		</div>
@@ -90,17 +90,14 @@
 	}
 
 	.hero-heading {
-		z-index: 2;
-		color: rgb(114, 22, 112);
-		-webkit-text-fill-color: rgb(114, 22, 112);
-		-webkit-text-stroke-width: 0.1px;
-		-webkit-text-stroke-color: rgb(251, 247, 255);
+		text-shadow: 0 0 30px rgba(var(--yellow-value), 0.5),
+			7px 7px 0px var(--darkest-violet-color);
 	}
 
 	.hero-subheading {
 		line-height: 0;
-		color: rgb(251, 247, 255);
-		text-shadow: 2px 2px 0 rgb(114, 22, 112);
+		text-shadow: 0 0 30px rgba(var(--yellow-value), 0.8),
+			1px 1px 0px var(--darkest-violet-color);
 	}
 
 	.hero-sun {
@@ -131,7 +128,7 @@
 			hsla(353.71, 100%, 58.57%, 0.6) 91.9%,
 			hsla(352.99, 100%, 58.04%, 0.6) 100%
 		);
-		box-shadow: 0 5px 30px rgba(254, 255, 56, 0.8);
+		box-shadow: 0 5px 30px rgba(var(--yellow-value), 0.8);
 	}
 
 	@media (min-width: 400px) {
