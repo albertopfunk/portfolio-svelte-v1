@@ -26,12 +26,12 @@
 	div {
 		width: 100%;
 		height: 17px;
-		background-color: rgba(66, 6, 241, 0.8);
+		background-color: rgba(var(--violet-value), 0.8);
 		background: linear-gradient(
 			to bottom,
-			rgba(66, 6, 241, 0.9) 0%,
-			rgba(222, 190, 253, 0.8) 90%,
-			rgba(251, 247, 255, 0.7) 100%
+			rgba(var(--violet-value), 0.9) 0%,
+			rgba(var(--light-violet-value), 0.8) 90%,
+			rgba(var(--lighter-violet-value), 0.7) 100%
 		);
 	}
 
@@ -41,7 +41,7 @@
 		position: absolute;
 		bottom: 2px;
 		z-index: 20;
-		fill: rgba(135, 26, 133, 0.85);
+		fill: rgba(var(--dark-magenta-value), 0.85);
 	}
 
 	svg.left {
@@ -106,6 +106,4 @@
 			width: 30%;
 		}
 	}
-
-	
 </style>
