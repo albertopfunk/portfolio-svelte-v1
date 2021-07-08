@@ -31,8 +31,7 @@
 	section {
 		min-height: 100vh;
 		width: 100%;
-		padding-top: 15px;
-		padding-bottom: 20%;
+		padding: 20px 10px 20%;
 		text-align: center;
 	}
 
