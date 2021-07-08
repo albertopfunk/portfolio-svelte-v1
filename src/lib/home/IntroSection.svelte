@@ -164,6 +164,16 @@
 		gap: 30px;
 	}
 
+	fieldset {
+		padding: 0 5px;
+		border-color: var(--violet-color);
+		box-shadow: 0 0 10px rgba(var(--violet-value), 0.8);
+	}
+
+	legend {
+		text-shadow: 2px 2px 0px var(--darkest-violet-color);
+	}
+
 	.options-container {
 		display: flex;
 		justify-content: center;
@@ -205,7 +215,6 @@
 			flex-direction: row;
 			align-items: flex-start;
 			justify-content: center;
-			gap: unset;
 		}
 
 		form {
@@ -223,6 +232,10 @@
 	}
 
 	@media (min-width: 1250px) {
+		.bio-container {
+			gap: unset;
+		}
+
 		ul {
 			list-style-image: url("triangle-lg.svg");
 		}
