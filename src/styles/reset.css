@@ -1,19 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+:root {
+	--lighter-violet-color: rgb(251, 247, 255);
+	--lighter-violet-value: 251, 247, 255;
+
+	--light-violet-color: rgb(222, 190, 253);
+	--light-violet-value: 222, 190, 253;
+
+	--violet-color: rgb(66, 6, 241);
+	--violet-value: 66, 6, 241;
+
+	--dark-violet-color: rgb(39, 2, 69);
+	--dark-violet-value: 39, 2, 69;
+
+	--darker-violet-color: rgb(25, 1, 44);
+	--darker-violet-value: 25, 1, 44;
+
+	--darkest-violet-color: rgb(11, 0, 19);
+	--darkest-violet-value: 11, 0, 19;
+
+	--magenta-color: rgb(254, 24, 211);
+	--magenta-value: 254, 24, 211;
+
+	--dark-magenta-color: rgb(135, 26, 133);
+	--dark-magenta-value: 135, 26, 133;
+
+	--darker-magenta-color: rgb(114, 22, 112);
+	--darker-magenta-value: 114, 22, 112;
+
+	--red-color: rgb(255, 41, 65);
+	--red-value: 255, 41, 65;
+
+	--yellow-color: rgb(254, 255, 56);
+	--yellow-value: 254, 255, 56;
+
+	--gray-color: rgb(95, 83, 112);
+	--gray-value: 95, 83, 112;
+}
+
 html {
 	cursor: default;
 	box-sizing: border-box;
 	overflow-wrap: anywhere;
 	word-break: break-word;
 	hyphens: auto;
-	background: rgb(25, 1, 44);
+	background: var(--darker-violet-color);
 	background: linear-gradient(
 		to bottom,
-		rgb(25, 1, 44) 0%,
-		rgb(114, 22, 112) 40%,
-		rgb(11, 0, 19) 100%
+		var(--darker-violet-color) 0%,
+		var(--darker-magenta-color) 40%,
+		var(--darkest-violet-color) 100%
 	);
-	color: ghostwhite;
+	color: var(--lighter-violet-color);
 	/*Prevent adjustments of font size Windows Phone/iOS*/
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -50,13 +88,13 @@ body {
 body {
 	background-image: linear-gradient(
 		0deg,
-		rgba(254, 24, 211, 0.02) 16.67%,
-		rgba(95, 83, 112, 0.02) 16.67%,
-		rgba(95, 83, 112, 0.02) 50%,
-		rgba(254, 24, 211, 0.02) 50%,
-		rgba(254, 24, 211, 0.02) 66.67%,
-		rgba(95, 83, 112, 0.02) 66.67%,
-		rgba(95, 83, 112, 0.02) 100%
+		rgba(var(--magenta-value), 0.02) 16.67%,
+		rgba(var(--gray-value), 0.02) 16.67%,
+		rgba(var(--gray-value), 0.02) 50%,
+		rgba(var(--magenta-value), 0.02) 50%,
+		rgba(var(--magenta-value), 0.02) 66.67%,
+		rgba(var(--gray-value), 0.02) 66.67%,
+		rgba(var(--gray-value), 0.02) 100%
 	);
 	background-size: 30px 10px;
 }
@@ -111,31 +149,11 @@ fieldset {
 }
 
 /**
-  * 1. Remove the default vertical scrollbar in IE.
-  * 2. Change the resize direction in all browsers (opinionated).
+  * Textareas only resize vertically by default
   */
 
 textarea {
-	overflow: auto; /* 1 */
-	resize: vertical; /* 2 */
-	resize: block; /* 2*/
-}
-
-/**
-  * Remove the inner border and padding of focus outlines in Firefox.
-  */
-
-::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-/**
-  * Restore the focus outline styles unset by the previous rule in Firefox.
-  */
-
-:-moz-focusring {
-	outline: 1px dotted ButtonText;
+	resize: vertical;
 }
 
 /**
@@ -144,6 +162,31 @@ textarea {
 
 :-moz-ui-invalid {
 	box-shadow: none;
+}
+
+/**
+  * Single taps are dispatched immediately on clickable elements
+  */
+a,
+button,
+input,
+label,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+/**
+		* ARIA roles include visual cursor hints
+		*/
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+[aria-disabled="true"],
+[disabled] {
+	cursor: not-allowed;
 }
 
 /**
@@ -318,39 +361,14 @@ legend {
 }
 
 /**
-  * bolder font weight for titles/important text
+  * bold font weight for titles/important text
   */
 
 b,
 strong,
 dt,
 legend {
-	font-weight: bolder;
-}
-
-/**
-  * Remove the inner border and padding of focus outlines in Firefox.
-  */
-
-::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-/**
-  * Restore the focus outline styles unset by the previous rule in Firefox.
-  */
-
-:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-
-/**
-  * Change the cursor on busy elements in all browsers (opinionated).
-  */
-
-[aria-busy="true"] {
-	cursor: progress;
+	font-weight: bold;
 }
 
 /* utilities */
