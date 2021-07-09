@@ -145,6 +145,7 @@ button,
 
 fieldset {
 	min-width: 0;
+	width: -moz-fit-content;
 	width: fit-content;
 }
 
