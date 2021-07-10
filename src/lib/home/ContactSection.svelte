@@ -1,9 +1,30 @@
 <script>
 	export let contactPosition;
+
+	function handleSubmit() {
+		console.log("hello");
+	}
 </script>
 
 <section id="contact" data-section="contact" bind:this={contactPosition}>
 	<h2>Get in Touch</h2>
+	<form on:submit|preventDefault={handleSubmit}>
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" autocomplete="name" required />
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" autocomplete="email" required />
+		</div>
+		<div>
+			<label for="message">Message:</label>
+			<textarea name="message" id="message" rows="10" required />
+		</div>
+		<div>
+			<button type="submit"> Send </button>
+		</div>
+	</form>
 	<div class="mountains-container">
 		<svg
 			class="mountains"
@@ -30,9 +51,7 @@
 <style>
 	section {
 		min-height: 100vh;
-		width: 100%;
-		padding: 20px 10px 20%;
-		text-align: center;
+		padding: 20px 0 20%;
 	}
 
 	h2 {
@@ -41,6 +60,58 @@
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: var(--darker-magenta-color);
 		text-shadow: 5px 5px 0px var(--darkest-violet-color);
+		text-align: center;
+	}
+
+	form {
+		width: 90%;
+		max-width: 500px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		min-height: 35px;
+		padding: 5px;
+		background-color: var(--lighter-violet-color);
+		border: 1px solid var(--darker-magenta-color);
+		outline: 1px solid var(--darker-magenta-color);
+		outline-offset: 3px;
+		box-shadow: 0 0 20px rgba(var(--darker-magenta-value), 0.8);
+		color: black;
+	}
+
+	:is(input, textarea):focus {
+		border-color: var(--yellow-color);
+		outline-color: var(--yellow-color);
+		box-shadow: 0 0 5px rgba(var(--yellow-value), 0.8);
+		outline-offset: 1;
+	}
+
+	button {
+		padding: 5px 40px;
+		background-color: var(--dark-violet-color);
+		border: 1px solid var(--darker-magenta-color);
+		outline: 1px solid var(--darker-magenta-color);
+		outline-offset: 3px;
+		box-shadow: 0 0 20px rgba(var(--darker-magenta-value), 0.8);
+	}
+
+	button:focus,
+	button:hover {
+		border-color: var(--yellow-color);
+		outline-color: var(--yellow-color);
+		box-shadow: 0 0 5px rgba(var(--yellow-value), 0.8);
+		outline-offset: 1;
+		color: var(--yellow-color);
+	}
+
+	button:active {
+		outline-offset: 0;
+		box-shadow: unset;
+		color: var(--lighter-violet-color);
 	}
 
 	.mountains-container {
