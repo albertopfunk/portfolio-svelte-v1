@@ -65,7 +65,7 @@
 				<li>Tinkering on the web over the years.</li>
 				<li>Started coding by moving turtles with python.</li>
 				<li>Solidified skills by attending lambda school and self learning.</li>
-				<li>Working to break into this industry.</li>
+				<li>Currently looking for opportunities.</li>
 			</ul>
 		</div>
 
@@ -96,7 +96,10 @@
 					I solidified my skills and foundations by attending lambda school and
 					through self learning.
 				</p>
-				<p>Now I am here working to break into this industry.</p>
+				<p>
+					Now I am here working to break into this industry. I'm currently
+					looking for opportunities.
+				</p>
 			</div>
 		</div>
 		<div class="text-container long" class:hidden={introBioLength !== "long"}>
@@ -137,6 +140,7 @@
 					convenience for me.
 				</p>
 				<p>Now I am here working to break into this industry.</p>
+				<p>A bit about me...</p>
 			</div>
 		</div>
 	</div>
@@ -189,8 +193,10 @@
 		gap: 5px;
 	}
 
-	.text-container {
+	.text-container:not(.hidden) {
 		text-align: left;
+		display: flex;
+		justify-content: center;
 	}
 
 	.text {
