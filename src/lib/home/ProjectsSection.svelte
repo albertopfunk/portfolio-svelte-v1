@@ -7,14 +7,18 @@
 <section id="projects">
 	<h2>Current Projects</h2>
 
-	<div class="flex-container">
-		{#each $projectSectionData as project, index}
-			<article data-section="projects" bind:this={projectsPosition[index]}>
-				<div>
-					<h3>{project.name}</h3>
+	{#each $projectSectionData as project, index}
+		<article data-section="projects" bind:this={projectsPosition[index]}>
+			<div class="title-container">
+				<div class="background">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 105 85">
 						<polygon points="0,0 100,0 50,75" />
 					</svg>
+				</div>
+
+				<div class="title">
+					<h3>{project.name}</h3>
+
 					<a href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 							><path
@@ -22,6 +26,7 @@
 							/></svg
 						>
 					</a>
+
 					<a href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 							><path
@@ -30,7 +35,9 @@
 						>
 					</a>
 				</div>
+			</div>
 
+			<div class="body-container">
 				<!-- <img src={project.image} alt="" height="450px" width="550px" /> -->
 				<!-- video gif, maybe image for now -->
 
@@ -45,16 +52,20 @@
 
 				<p>Tech used</p>
 				<!-- overview of tech used for this project and why -->
-			</article>
-		{/each}
-	</div>
+			</div>
+		</article>
+	{/each}
 </section>
 
-<style>
+<style lang="scss">
 	section {
 		width: 100%;
 		padding: 20px 0 20%;
 		text-align: center;
+
+		@media (min-width: 850px) {
+			padding-bottom: 15%;
+		}
 	}
 
 	h2 {
@@ -70,34 +81,53 @@
 		width: 100%;
 	}
 
-	article > div {
+	.title-container {
+		width: -moz-fit-content;
 		width: fit-content;
+		display: grid;
+		grid-template-columns: 1fr;
 		margin: 0 auto;
-		padding: 10px 75px 0;
-	}
 
-	div > svg {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: 100%;
-		height: auto;
-		fill: transparent;
-		stroke: rgba(var(--red-value), 0.5);
-		stroke-width: 1px;
-		filter: drop-shadow(2px 2px 0 rgba(var(--darkest-violet-value), .8));
-	}
+		div {
+			grid-row-start: 1;
+			grid-column-start: 1;
+		}
 
-	a > svg {
-		width: 2.5rem;
-		height: auto;
-		fill: var(--lighter-violet-color);
-	}
+		.background {
+			svg {
+				width: 100%;
+				max-width: 350px; /*fit-content fallback*/
+				height: auto;
+				fill: transparent;
+				stroke: rgba(var(--red-value), 0.5);
+				stroke-width: 1px;
+				filter: drop-shadow(2px 2px 0 rgba(var(--darkest-violet-value), 0.8));
 
-	@media (min-width: 850px) {
-		section {
-			padding-bottom: 15%;
+				@media (min-width: 650px) {
+					max-width: 450px;
+				}
+				@media (min-width: 1250px) {
+					max-width: 550px;
+				}
+			}
+		}
+
+		.title {
+			padding: 15px 20px 0;
+
+			@media (min-width: 650px) {
+				padding: 15px 100px 0;
+			}
+
+			svg {
+				width: 2rem;
+				height: auto;
+				fill: var(--lighter-violet-color);
+
+				@media (min-width: 650px) {
+					width: 2.5rem;
+				}
+			}
 		}
 	}
 </style>
