@@ -11,51 +11,90 @@
 	let currentSection = null;
 	let heroPosition;
 	let introPosition;
-	let projectsPosition = [];
+	let projectsPosition;
 	let contactPosition;
 
-	const options = {
-		root: null,
-		rootMargin: "0px",
-		threshold: 0.75
+	const positions = {
+		hero: null,
+		intro: null,
+		projects: null,
+		contact: null
 	};
 
-	if (browser) {
-		// observe sections
-		// set current section if 70% of it is in viewport
-		const observer = new IntersectionObserver(onIntersection, options);
+	// dynamic threshold based on height of section
+	function observeEl(el, key) {
+		let threshold = 0.75;
+		const elHeight = el.getBoundingClientRect().height;
+		let th = threshold;
 
-		onMount(() => {
-			observer.observe(heroPosition);
-			observer.observe(introPosition);
-			projectsPosition.forEach((project) => observer.observe(project));
-			observer.observe(contactPosition);
-		});
+		if (elHeight > window.innerHeight * threshold) {
+			th = ((window.innerHeight * threshold) / elHeight) * threshold;
+		}
 
-		function onIntersection(entries, observer) {
-			let current = entries.filter((entry) => entry.isIntersecting);
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: th
+		};
 
-			if (current.length > 0) {
-				// uses elements data-section value
-				current = current[0].target.dataset.section;
-				switch (current) {
-					case "hero":
-						currentSection = null;
-						break;
-					case "intro":
-						currentSection = "intro";
-						break;
-					case "projects":
-						currentSection = "projects";
-						break;
-					case "contact":
-						currentSection = "contact";
-						break;
-					default:
-						currentSection = null;
-				}
+		positions[key] = new IntersectionObserver(onIntersection, options);
+		positions[key].observe(el);
+	}
+
+	function onIntersection(entries, observer) {
+		let current = entries.filter((entry) => entry.isIntersecting);
+		if (current.length > 0) {
+			// uses elements data-section value
+			current = current[0].target.dataset.section;
+			switch (current) {
+				case "hero":
+					currentSection = null;
+					break;
+				case "intro":
+					currentSection = "intro";
+					break;
+				case "projects":
+					currentSection = "projects";
+					break;
+				case "contact":
+					currentSection = "contact";
+					break;
+				default:
+					currentSection = null;
 			}
 		}
+	}
+
+	function unObserveEl(el, key) {
+		console.log(positions[key]);
+	}
+
+	if (browser) {
+		/*
+		
+			on mount
+			create observer for each section
+			determine threshold for each
+			set options
+			observe
+
+			on change of intro
+			destroy current observer
+			create new observer
+			determine threshold
+			set options
+			observe
+		
+		
+		*/
+
+		// observe sections
+		onMount(() => {
+			observeEl(heroPosition, "hero");
+			observeEl(introPosition, "intro");
+			observeEl(projectsPosition, "projects");
+			observeEl(contactPosition, "contact");
+		});
 	}
 </script>
 
@@ -75,7 +114,7 @@
 		<ScrollDownSpacer />
 	</div>
 
-	<IntroSection bind:introPosition />
+	<IntroSection bind:introPosition {unObserveEl} />
 	<PalmTreesSpacer />
 	<ProjectsSection bind:projectsPosition />
 	<PalmTreesSpacer />
