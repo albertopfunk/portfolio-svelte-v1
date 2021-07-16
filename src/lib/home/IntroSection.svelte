@@ -1,10 +1,14 @@
 <script>
 	export let introPosition;
+	export let unObserveEl;
 
 	let introBioLength = "short";
 
 	function chooseLength(event) {
 		introBioLength = event.target.id;
+
+		// reset observer for height change
+		unObserveEl(introPosition, "intro");
 	}
 </script>
 
@@ -65,7 +69,9 @@
 				<li>Tinkering on the web over the years.</li>
 				<li>Started coding by moving turtles with python.</li>
 				<li>Solidified skills by attending lambda school and self learning.</li>
-				<li>Currently looking for opportunities.</li>
+				<li>
+					Currently looking for opportunities to learn and grow as a developer.
+				</li>
 			</ul>
 		</div>
 
@@ -97,8 +103,9 @@
 					through self learning.
 				</p>
 				<p>
-					Now I am here working to break into this industry. I'm currently
-					looking for opportunities.
+					I have been building and learning on the side since then. Now I am
+					here working to break into this industry. I'm currently looking for
+					opportunities where I will be able to learn and grow as a developer.
 				</p>
 			</div>
 		</div>
@@ -139,8 +146,6 @@
 					up front to attend, also they were fully remote so that was a huge
 					convenience for me.
 				</p>
-				<p>Now I am here working to break into this industry.</p>
-				<p>A bit about me...</p>
 			</div>
 		</div>
 	</div>

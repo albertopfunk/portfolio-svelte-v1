@@ -66,28 +66,13 @@
 	}
 
 	function unObserveEl(el, key) {
+		console.log(el);
 		console.log(positions[key]);
+		positions[key].disconnect();
+		observeEl(el, key);
 	}
 
 	if (browser) {
-		/*
-		
-			on mount
-			create observer for each section
-			determine threshold for each
-			set options
-			observe
-
-			on change of intro
-			destroy current observer
-			create new observer
-			determine threshold
-			set options
-			observe
-		
-		
-		*/
-
 		// observe sections
 		onMount(() => {
 			observeEl(heroPosition, "hero");
