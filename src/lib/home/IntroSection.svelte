@@ -1,14 +1,26 @@
 <script>
+	import { afterUpdate, onMount } from "svelte";
 	export let introPosition;
 	export let unObserveEl;
 
 	let introBioLength = "short";
+	let currentHeight = null;
 
-	function chooseLength(event) {
-		introBioLength = event.target.id;
+	onMount(() => {
+		currentHeight = introPosition.getBoundingClientRect().height;
+	});
+
+	afterUpdate(() => {
+		if (currentHeight === introPosition.getBoundingClientRect().height) {
+			return;
+		}
 
 		// reset observer for height change
 		unObserveEl(introPosition, "intro");
+	});
+
+	function chooseLength(event) {
+		introBioLength = event.target.id;
 	}
 </script>
 
@@ -146,6 +158,23 @@
 					up front to attend, also they were fully remote so that was a huge
 					convenience for me.
 				</p>
+				<p>
+					Shortly after completing lambda school I went on a hiatus, this was a
+					difficult time in my life, my mom was in her final stages of life
+					after a long battle with cancer, she passed away that year, she was
+					the most amazing, caring, loving, powerful person I have ever known. I
+					think when I first started developing again, it was sort of a coping
+					mechanism for me, my interest in this was greater than ever. Building
+					and seeing my progress has been such a huge joy for me, this is
+					something I want to be a part of, I have no doubt in that. I have been
+					building and learning on the side(thanks full time job) since then.
+					Now I am here working to break into this industry. I'm currently
+					looking for opportunities where I will be able to learn and grow as a
+					developer. I love and believe in the web, I am especially interested
+					in roles where I get to work on different aspects of the web, build
+					complex UI, work on accessibility, etc.
+				</p>
+				<p>Thank you for getting this far</p>
 			</div>
 		</div>
 	</div>
@@ -155,7 +184,7 @@
 	section {
 		min-height: 100vh;
 		width: 100%;
-		padding: 20px 10px 20%;
+		padding: 15px 10px 20%;
 		text-align: center;
 	}
 

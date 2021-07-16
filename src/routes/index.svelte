@@ -23,7 +23,7 @@
 
 	// dynamic threshold based on height of section
 	function observeEl(el, key) {
-		let threshold = 0.75;
+		let threshold = 0.5;
 		const elHeight = el.getBoundingClientRect().height;
 		let th = threshold;
 
@@ -66,9 +66,7 @@
 	}
 
 	function unObserveEl(el, key) {
-		console.log(el);
-		console.log(positions[key]);
-		positions[key].disconnect();
+		positions[key].unobserve(el);
 		observeEl(el, key);
 	}
 
