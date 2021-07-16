@@ -8,6 +8,12 @@
 
 <section id="contact" data-section="contact" bind:this={contactPosition}>
 	<h2>Get in Touch</h2>
+	<p>
+		I'm currently looking for opportunities where I will be able to learn and
+		grow as a developer. I love and believe in the web, I am especially
+		interested in roles where I get to work on different aspects of the web,
+		build complex UI, work on accessibility, etc.
+	</p>
 	<form on:submit|preventDefault={handleSubmit}>
 		<div>
 			<label for="name">Name:</label>
@@ -51,7 +57,7 @@
 <style>
 	section {
 		min-height: 100vh;
-		padding: 20px 0 20%;
+		padding: 15px 0 20%;
 	}
 
 	h2 {
@@ -62,12 +68,20 @@
 		text-shadow: 5px 5px 0px var(--darkest-violet-color);
 		text-align: center;
 	}
+	
+	p {
+		width: 90%;
+		max-width: 500px;
+		text-align: center;
+		margin: 0 auto;
+	}
 
 	form {
 		width: 90%;
 		max-width: 500px;
 		padding: 0 10px;
 		margin: 0 auto;
+		z-index: 21; /*+1 mountains svg*/
 	}
 
 	input,
@@ -140,18 +154,18 @@
 		position: absolute;
 		bottom: 100%;
 		left: 0%;
-		z-index: 15;
+		z-index: 19;/*-1 mountains svg*/
 		fill: var(--dark-violet-color);
 		fill-opacity: 0.1;
 	}
 
-	@media (min-width: 850px) {
-		section {
-			padding-bottom: 15%;
-		}
-	}
-
 	@media (min-width: 1250px) {
+		section {
+			padding-bottom: 25%;
+		}
+		p, form {
+			max-width: 650px;
+		}
 		.mountains {
 			bottom: 80%;
 		}
