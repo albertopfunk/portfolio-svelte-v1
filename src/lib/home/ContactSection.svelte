@@ -57,7 +57,7 @@
 <style>
 	section {
 		min-height: 100vh;
-		padding: 15px 0 20%;
+		padding-bottom: 60%;
 	}
 
 	h2 {
@@ -70,14 +70,14 @@
 	}
 	
 	p {
-		width: 90%;
+		width: 95%;
 		max-width: 500px;
 		text-align: center;
 		margin: 0 auto;
 	}
 
 	form {
-		width: 90%;
+		width: 95%;
 		max-width: 500px;
 		padding: 0 10px;
 		margin: 0 auto;
@@ -159,10 +159,13 @@
 		fill-opacity: 0.1;
 	}
 
-	@media (min-width: 1250px) {
+	@media (min-width: 650px) {
 		section {
-			padding-bottom: 25%;
+			padding-bottom: 30%;
 		}
+	}
+
+	@media (min-width: 1250px) {
 		p, form {
 			max-width: 650px;
 		}

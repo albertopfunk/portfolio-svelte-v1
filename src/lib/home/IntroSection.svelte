@@ -184,7 +184,7 @@
 	section {
 		min-height: 100vh;
 		width: 100%;
-		padding: 15px 10px 20%;
+		padding-bottom: 20%;
 		text-align: center;
 	}
 
@@ -227,8 +227,12 @@
 		gap: 5px;
 	}
 
-	.text-container:not(.hidden) {
+	.text-container {
 		text-align: left;
+		padding: 0 10px;
+	}
+
+	.text-container:not(.hidden) {
 		display: flex;
 		justify-content: center;
 	}
