@@ -178,6 +178,11 @@ textarea,
 	touch-action: manipulation;
 }
 
+/* For images to not be able to exceed their container */
+img {
+	max-width: 100%;
+}
+
 /**
 		* ARIA roles include visual cursor hints
 		*/
