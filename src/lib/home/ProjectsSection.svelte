@@ -11,7 +11,7 @@
 		<article>
 			<div class="title-container">
 				<div class="background">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 105 85">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 105 78">
 						<polygon points="0,0 100,0 50,75" />
 					</svg>
 				</div>
@@ -37,20 +37,34 @@
 				</div>
 			</div>
 
-			<div class="body-container">
-				<img src={project.mediaUrl} alt="" height="450px" width="550px" />
-
+			<div class="description-container">
 				<h4>Description</h4>
 				<p>{project.description}</p>
+			</div>
 
-				<h4>Features</h4>
-				<p>{project.features}</p>
+			<div class="flex-container" class:even={index % 2 === 0}>
+				<div class="image-container">
+					<img src={project.mediaUrl} alt="" />
+				</div>
 
+				<div class="features-container">
+					<h4>Features</h4>
+					<ul>
+						{#each project.features as feature}
+							<li>{feature}</li>
+						{/each}
+					</ul>
+				</div>
+			</div>
+
+			<div class="tech-container">
 				<h4>Tech list</h4>
 				<dl>
 					{#each project.tech as tech}
-					<dt>{tech.name}</dt>
-					<dd>{tech.description}</dd>	
+						<div class="list-items">
+							<dt>{tech.name}</dt>
+							<dd>{tech.description}</dd>
+						</div>
 					{/each}
 				</dl>
 			</div>
@@ -60,13 +74,18 @@
 
 <style lang="scss">
 	section {
-		width: 100%;
-		padding: 15px 0 20%;
-		text-align: center;
+		padding-bottom: 20%;
 
 		@media (min-width: 850px) {
 			padding-bottom: 15%;
 		}
+	}
+
+	h2,
+	h3,
+	h4,
+	.title-container {
+		text-align: center;
 	}
 
 	h2 {
@@ -74,7 +93,15 @@
 	}
 
 	h3 {
-		text-shadow: 5px 5px 0px var(--darkest-violet-color);
+		text-shadow: 4px 4px 0px var(--darkest-violet-color);
+	}
+
+	h4 {
+		text-shadow: 3px 3px 0px var(--darkest-violet-color);
+	}
+	
+	dt {
+		text-shadow: 2px 2px 0px var(--darkest-violet-color);
 	}
 
 	article {
@@ -126,12 +153,116 @@
 				fill: var(--lighter-violet-color);
 
 				&:hover {
-					fill: var(--red-color)
+					fill: var(--red-color);
 				}
 
 				@media (min-width: 650px) {
 					width: 2.5rem;
 				}
+			}
+		}
+	}
+
+	.description-container {
+		width: 95%;
+		max-width: 650px;
+		text-align: center;
+		margin: 0 auto;
+
+		@media (min-width: 1250px) {
+			max-width: 850px;
+		}
+	}
+
+	.flex-container {
+		@media (min-width: 1050px) {
+			display: flex;
+
+			&.even {
+				flex-direction: row-reverse;
+			}
+		}
+
+		.image-container {
+			@media (min-width: 1050px) {
+				flex-basis: 60%;
+			}
+		}
+
+		.features-container {
+			width: 95%;
+			margin: 0 auto;
+
+			@media (min-width: 1050px) {
+				flex-basis: 40%;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				list-style-type: circle;
+				list-style-type: disclosure-open;
+				list-style-position: inside;
+
+				@media (min-width: 650px) {
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 30px;
+				}
+			}
+
+			li {
+				@media (min-width: 650px) {
+					flex-basis: 45%;
+				}
+			}
+		}
+	}
+
+	.tech-container {
+		width: 95%;
+		margin: 0 auto;
+
+		@media (min-width: 1050px) {
+			width: 100%;
+			margin: 0;
+		}
+
+		dl {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+
+			@media (min-width: 650px) {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 50px;
+			}
+
+			@media (min-width: 1250px) {
+				gap: 75px;
+			}
+		}
+
+		.list-items {
+			@media (min-width: 650px) {
+				flex-basis: 45%;
+			}
+			@media (min-width: 950px) {
+				flex-basis: 40%;
+			}
+			@media (min-width: 1250px) {
+				flex-basis: 35%;
+			}
+			@media (min-width: 1650px) {
+				flex-basis: 25%;
+			}
+
+			dd {
+				padding-left: 5px;
 			}
 		}
 	}
