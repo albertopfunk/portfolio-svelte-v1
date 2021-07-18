@@ -1,24 +1,31 @@
-# create-svelte
+# Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+First iteration of my portfolio site.
 
-## Creating a project
+Visit the site by going to [albertopfunk.dev](https://albertopfunk.dev).
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Developing](#developing)
+* [Building](#building)
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## General Info
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+* 80s retro theme portfolio with in-page section navigation
 
-> Note: the `@next` is temporary
+## Technologies
+
+* Svelte with sveltekit
+
+## Setup
+
+Fork project and install dependencies
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've forked and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -29,10 +36,12 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+To create a production version of the app:
 
 ```bash
 npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+> The app currently uses the netlify adapter
+> you can install another [adapter](https://kit.svelte.dev/docs#adapters) for your target environment.
