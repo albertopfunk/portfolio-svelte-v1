@@ -22,16 +22,16 @@
 	div {
 		width: 100%;
 		height: 15vh;
-    text-align: center;
+		text-align: center;
 	}
 	svg {
 		height: 75%;
 		width: auto;
 	}
 
-  @media (max-width: 1250px) {
-    div {
-      display: none;
-    }
-  }
+	@media (max-width: 1250px) {
+		div {
+			display: none;
+		}
+	}
 </style>

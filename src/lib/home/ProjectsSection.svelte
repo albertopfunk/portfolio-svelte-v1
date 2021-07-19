@@ -99,7 +99,7 @@
 	h4 {
 		text-shadow: 3px 3px 0px var(--darkest-violet-color);
 	}
-	
+
 	dt {
 		text-shadow: 2px 2px 0px var(--darkest-violet-color);
 	}

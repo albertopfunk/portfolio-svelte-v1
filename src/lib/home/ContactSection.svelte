@@ -68,7 +68,7 @@
 		text-shadow: 5px 5px 0px var(--darkest-violet-color);
 		text-align: center;
 	}
-	
+
 	p {
 		width: 95%;
 		max-width: 500px;
@@ -154,7 +154,7 @@
 		position: absolute;
 		bottom: 100%;
 		left: 0%;
-		z-index: 19;/*-1 mountains svg*/
+		z-index: 19; /*-1 mountains svg*/
 		fill: var(--dark-violet-color);
 		fill-opacity: 0.1;
 	}
@@ -166,7 +166,8 @@
 	}
 
 	@media (min-width: 1250px) {
-		p, form {
+		p,
+		form {
 			max-width: 650px;
 		}
 		.mountains {

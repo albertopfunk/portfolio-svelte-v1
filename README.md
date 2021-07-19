@@ -5,19 +5,20 @@ Second iteration of my portfolio site.
 Visit the site by going to [albertopfunk.dev](https://albertopfunk.dev).
 
 ## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Developing](#developing)
-* [Building](#building)
+
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Developing](#developing)
+- [Building](#building)
 
 ## General Info
 
-* 80s retro theme portfolio with in-page section navigation
+- 80s retro theme portfolio with in-page section navigation
 
 ## Technologies
 
-* Svelte with sveltekit
+- Svelte with sveltekit
 
 ## Setup
 
