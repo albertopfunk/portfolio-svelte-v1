@@ -4,173 +4,194 @@ export const projectSectionData = readable([
 	{
 		name: "Tech Profiles",
 		description:
-			"The first version of this app was my capstone project when I attended lambda school(link to github), it was a 5 week team project, each team had a PM who would review our PRs and merge. I learned more in those 5 weeks than 6 months self learning, building fully functioning web apps with a team and a deadline is such a great experience. I left the app as is and started version 2, which was renamed to tech profiles, I have been working on it on the side since then. It is a discovery app for people in tech, where they can create a portfolio for others to see.",
+			"The first version of this web app was my capstone project(when I attended lambda school). It was a 5-week team built project, each team had a PM who would review PRs and merge them. I learned more in those 5 weeks than 6 months of self learning, building fully functioning web apps with a team and a deadline is such a great experience. I left the app as is after the 5 weeks to show what we accomplished in that time, and started version 2, which was renamed to tech profiles. I have been working on tech profiles on the side since then. It is a discovery app for people in tech, where they can create a profile for others to see.",
 		features: [
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem",
-			"first feature example",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem"
+			"Infinite scroll with pagination",
+			"Sort profiles",
+			"Filter by current location, interested locations, area of work",
+			"Create a profile with a multi-page dashboard",
+			"See live updates to your profile in your dashboard",
+			"Profile checklist to guide you",
+			"Upload your own image or choose an avatar",
+			"Subscribe to go live"
 		],
 		tech: [
 			{
-				name: "react(cra)",
+				name: "React(CRA)",
 				description:
-					"familiarity, big community, plenty of documentation, established, app feel"
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
 			},
 			{
-				name: "node/express",
+				name: "Node with Express",
 				description:
-					"familiarity, big community, plenty of documentation, established, js ecosystem"
+					"lorem familiarity, big community, plenty of documentation, established, js ecosystem"
 			},
 			{
-				name: "SQL/postgres",
-				description: "straight forward requests"
+				name: "SQL with PostgreSQL",
+				description: "lorem straight forward requests"
 			},
 			{
-				name: "AuthO",
-				description: "login/sign up, auto log in, silent authentication"
+				name: "Auth0",
+				description: "lorem login/sign up, auto log in, silent authentication"
 			},
 			{
 				name: "Stripe",
-				description: "simple to implement, customizable, great docs"
+				description: "lorem simple to implement, customizable, great docs"
 			},
 			{
-				name: "Google places",
-				description: "locations search and Gio location"
+				name: "Google Places",
+				description: "lorem locations search and Gio location"
+			},
+			{
+				name: "Cloudinary",
+				description:
+					"lorem media storage, manipulation, CDN caching for faster delivery"
 			},
 			{
 				name: "Netlify",
-				description: "big community, simple to deploy"
+				description: "lorem big community, simple to deploy"
 			},
 			{
-				name: "supabase/vercel",
-				description: "big community, simple to deploy"
+				name: "Heroku",
+				description: "lorem big community, simple to deploy"
 			}
 		],
-		siteUrl: "tech-profiles.com",
+		siteUrl: "https://techprofiles.dev",
 		githubUrl:
 			"https://github.com/albertopfunk/Developer-Profiles-v2--tech-profiles",
 		mediaUrl:
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-
 		slug: "tech-profiles"
 	},
 	{
 		name: "NomCue",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis ea, officiis, cum asperiores repellendus natus dicta tenetur inventore blanditiis ratione dolorem, quas eum perspiciatis placeat atque nihil. Assumenda, et!",
+			"This is my favorite project, and a project close to the heart. It started as a hackathon idea at lambda school, it is an idea that just popped up in my head when I saw the hackathon signup sheet. The idea was accepted and another student and I worked on it for 2 days, staying up all night building it, unfortunately we both fell asleep and missed the presentation so we did not win. We did post the app and video on it afterwards and got so much praise, many saying it would have definitely won, totally worth it! The description I came up with when I submitted this idea was, 'Don't know what to eat? open up our food suggestion app and let it suggest something for you!, If the suggestion does not satisfy you, just click x to get a new suggestion!'. It started as a 'Tinder for food' but I have since then expanded the idea to make it into more of a discovery app for food and activities.",
 		features: [
-			"first feature example lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem"
+			"Choose between food, activities or nightlife",
+			"Select your city or any other city in the US",
+			"Select a random suggestion or click next for another random suggestion",
+			"Browse through local places when you select a suggestion"
 		],
 		tech: [
 			{
-				name: "AuthO",
-				description: "login/sign up, auto log in, silent authentication"
+				name: "NextJS",
+				description:
+					"lorem minimal interaction with DB, some pages are fully static, other ssr with minimal db interaction"
 			},
 			{
-				name: "Stripe",
-				description: "simple to implement, customizable, great docs"
+				name: "NoSQL/MongoDB",
+				description:
+					"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
 			},
 			{
-				name: "Google places",
-				description: "locations search and Gio location"
+				name: "Google Places",
+				description: "lorem find local businesses"
 			},
 			{
-				name: "Netlify",
-				description: "big community, simple to deploy"
+				name: "Yelp",
+				description: "lorem find local businesses"
 			},
 			{
-				name: "supabase/vercel",
-				description: "big community, simple to deploy"
+				name: "Vercel",
+				description: "lorem big community, simple to deploy"
 			}
 		],
-		siteUrl: "nomcue.com",
+		siteUrl: "https://nomcue.com",
 		githubUrl: "",
 		mediaUrl:
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
 		slug: "nomcue"
 	},
+
 	{
-		name: "Portfolio",
-		description:
-			"I LOVE 80s retro themes(blade runner 2049 is my favorite movie). I see too many portfolios very similar, doing the same animations and similar layouts. I did not want to follow that path, my portfolio represents me and what I love",
+		name: "Conway's Game of Life",
+		description: "Based on Conway's game of life.",
 		features: [
-			"first feature example lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem"
+			"Click on any cell to customize game",
+			"Choose a preset",
+			"Expand the number of cells"
 		],
 		tech: [
 			{
-				name: "AuthO",
-				description: "login/sign up, auto log in, silent authentication"
+				name: "React(CRA)",
+				description:
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
 			},
 			{
-				name: "Stripe",
-				description: "simple to implement, customizable, great docs"
-			},
-			{
-				name: "Google places",
-				description: "locations search and Gio location"
-			},
-			{
-				name: "Netlify",
-				description: "big community, simple to deploy"
-			},
-			{
-				name: "supabase/vercel",
-				description: "big community, simple to deploy"
+				name: "Styled Components",
+				description: "lorem simple to implement, customizable, great docs"
 			}
 		],
-		siteUrl: "albertopfunk",
-		githubUrl: "",
+		siteUrl: "https://conwayknowslife.dev",
+		githubUrl: "https://github.com/albertopfunk/Conways-Life",
+		mediaUrl:
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+		slug: "game-of-life"
+	},
+	{
+		name: "Portfolio",
+		description:
+			"I LOVE neon-noir synthwave type themes, the nostalgia, visuals, and sounds of it all(there needs to be more movies like blade runner 2049 and drive!). I see too many portfolios that are very similar, doing the same animations with boring(sorry) layouts. I did not want to follow that path, my portfolio represents me and what I love.",
+		features: [
+			"In-page navigation",
+			"Reduced motion if preferred",
+			"Contact form"
+		],
+		tech: [
+			{
+				name: "Svelte with SvelteKit",
+				description:
+					"lorem trying out different tech, svelte seems like a formiddible contender to other major frameworks"
+			},
+			{
+				name: "Intersection Observer API",
+				description: "lorem keep track of element positions in the background"
+			},
+			{
+				name: "Netlify Forms",
+				description: "lorem contact form hooked up to netlify"
+			}
+		],
+		siteUrl: "https://albertopfunk.dev",
+		githubUrl: "https://github.com/albertopfunk/portfolio-svelte-v2",
 		mediaUrl:
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
 		slug: "portfolio"
 	},
 	{
-		name: "Rollup Start Fresh",
+		name: "rollup-plugin-fresh",
 		description:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum perferendis ea, officiis, cum asperiores repellendus natus dicta tenetur inventore blanditiis ratione dolorem, quas eum perspiciatis placeat atque nihil. Assumenda, et!",
+			"While I was building the first verson of my portfolio with svelte(before sveltekit), I was using a routing library(navaid) that allows for esm routing and prerendering, combined with svelte I thought it would be cool to explore this. Because I was using rollup to compile into esm, all the files would go into one directory. During development, rollup created new files everytime I made changes to code, so the directory would quickly get out of hand and I would have multiple files I had to remove manually. I reversed engineered a few packages that removed files from directories to create this tool, It helped me by removing all the files on startup so I would not have to.",
 		features: [
-			"first feature example lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem lorem",
-			"first feature example lorem lorem"
+			"Choose any directory and remove all files",
+			"Target files not to remove",
+			"Logs files that are removed",
+			"Quiet option to not log files that are removed",
+			"Errors are still loged if quiet option selected"
 		],
 		tech: [
 			{
-				name: "AuthO",
-				description: "login/sign up, auto log in, silent authentication"
+				name: "JavaScript",
+				description: "lorem first feature example lorem"
 			},
 			{
-				name: "Stripe",
-				description: "simple to implement, customizable, great docs"
+				name: "Node",
+				description: "lorem first feature example lorem"
 			},
 			{
-				name: "Google places",
-				description: "locations search and Gio location"
+				name: "rimraf",
+				description: "lorem first feature example lorem"
 			},
 			{
-				name: "Netlify",
-				description: "big community, simple to deploy"
-			},
-			{
-				name: "supabase/vercel",
-				description: "big community, simple to deploy"
+				name: "Rollup",
+				description: "lorem first feature example lorem"
 			}
 		],
-		siteUrl: "",
-		githubUrl: "",
+		siteUrl: "https://github.com/albertopfunk/Portfolio-Svelte-v1--DEMO",
+		githubUrl: "https://github.com/albertopfunk/rollup-plugin-fresh",
 		mediaUrl:
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-		slug: "rollup-start-fresh"
+		slug: "rollup-plugin-fresh"
 	}
 ]);
