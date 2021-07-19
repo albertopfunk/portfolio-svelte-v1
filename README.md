@@ -1,6 +1,6 @@
 # Portfolio
 
-First iteration of my portfolio site.
+Second iteration of my portfolio site.
 
 Visit the site by going to [albertopfunk.dev](https://albertopfunk.dev).
 
