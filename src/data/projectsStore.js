@@ -19,15 +19,53 @@ export const projectSectionData = readable([
 			{
 				name: "React(CRA)",
 				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
+					"SPA rendering allows me to make this project feel more like an app. This is a pretty large project so ease of composability and reusability is important. React also has major backers and a wide adoption where most edge cases have already been solved."
+			},
+			{
+				name: "Styled Components",
+				description:
+					"This is usually my go to styling library since it has SASS-like powers plus much more, including props and encapsulation of styles making reusability more viable."
+			},
+			{
+				name: "React Router",
+				description:
+					"Routing logic does not come out of the box for React, this library is the most established and maintained. It also has a bright future, with the creator of react router and reach router both collaborating on future releases, fixing accessibility issues of react router and much more."
+			},
+			{
+				name: "React Helmet",
+				description:
+					"I feel like this should be out of the box for React since it is very important. Being able to change <head> tags like meta descriptions and titles help with many things, like accessibility(screen readers announcing titles), usability(being able to see titles in tabs), and SEO(page descriptions)."
 			},
 			{
 				name: "Node with Express",
 				description:
-					"lorem familiarity, big community, plenty of documentation, established, js ecosystem"
+					"Most of my focus right now is with front-end technologies and JS, so I want to stay within the JS ecosystem to interact with databases. With the help of express, it makes creating APIs much more approachable."
 			},
 			{
 				name: "SQL with PostgreSQL",
+				description: "Even though most of my focus is with front-end technology, I know the importance of knowing this querying language. PostgreSQL is widely used in production and available with many services."
+			},
+			{
+				name: "Knex",
+				description: "Knex makes building queries more readable, it also helps with connections so I can connect multiple databases for development, testing, and production."
+			},
+			{
+				name: "Jest",
+				description:
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
+			},
+			{
+				name: "React Testing Library Suite",
+				description:
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
+			},
+			{
+				name: "Cypress",
+				description:
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
+			},
+			{
+				name: "ESLint/Prettier",
 				description: "lorem straight forward requests"
 			},
 			{
@@ -80,9 +118,23 @@ export const projectSectionData = readable([
 					"lorem minimal interaction with DB, some pages are fully static, other ssr with minimal db interaction"
 			},
 			{
+				name: "Tailwind CSS",
+				description:
+					"lorem paired with postcss-import, autoprefixer, purgecss"
+			},
+			{
 				name: "NoSQL/MongoDB",
 				description:
 					"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
+			},
+			{
+				name: "Isomorphic Unfetch",
+				description:
+					"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
+			},
+			{
+				name: "ESLint/Prettier",
+				description: "lorem straight forward requests"
 			},
 			{
 				name: "Google Places",
@@ -185,6 +237,10 @@ export const projectSectionData = readable([
 			},
 			{
 				name: "Rollup",
+				description: "lorem first feature example lorem"
+			},
+			{
+				name: "NPM",
 				description: "lorem first feature example lorem"
 			}
 		],
