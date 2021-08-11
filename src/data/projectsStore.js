@@ -101,86 +101,88 @@ export const projectSectionData = readable([
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
 		slug: "tech-profiles"
 	},
-	{
-		name: "NomCue",
-		description:
-			"This is my favorite project, and a project close to the heart. It started as a hackathon idea at lambda school, it is an idea that just popped up in my head when I saw the hackathon signup sheet. The idea was accepted and another student and I worked on it for 2 days, staying up all night building it, unfortunately we both fell asleep and missed the presentation so we did not win. We did post the app and video on it afterwards and got so much praise, many saying it would have definitely won, totally worth it! The description I came up with when I submitted this idea was, 'Don't know what to eat? open up our food suggestion app and let it suggest something for you!, If the suggestion does not satisfy you, just click x to get a new suggestion!'. It started as a 'Tinder for food' but I have since then expanded the idea to make it into more of a discovery app for food and activities.",
-		features: [
-			"Choose between food, activities or nightlife",
-			"Select your city or any other city in the US",
-			"Select a random suggestion or click next for another random suggestion",
-			"Browse through local places when you select a suggestion"
-		],
-		tech: [
-			{
-				name: "NextJS",
-				description:
-					"lorem minimal interaction with DB, some pages are fully static, other ssr with minimal db interaction"
-			},
-			{
-				name: "Tailwind CSS",
-				description:
-					"lorem paired with postcss-import, autoprefixer, purgecss"
-			},
-			{
-				name: "NoSQL/MongoDB",
-				description:
-					"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
-			},
-			{
-				name: "Isomorphic Unfetch",
-				description:
-					"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
-			},
-			{
-				name: "ESLint/Prettier",
-				description: "lorem straight forward requests"
-			},
-			{
-				name: "Google Places",
-				description: "lorem find local businesses"
-			},
-			{
-				name: "Yelp",
-				description: "lorem find local businesses"
-			},
-			{
-				name: "Vercel",
-				description: "lorem big community, simple to deploy"
-			}
-		],
-		siteUrl: "https://nomcue.com",
-		githubUrl: "",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-		slug: "nomcue"
-	},
 
-	{
-		name: "Conway's Game of Life",
-		description: "Based on Conway's game of life.",
-		features: [
-			"Click on any cell to customize game",
-			"Choose a preset",
-			"Expand the number of cells"
-		],
-		tech: [
-			{
-				name: "React(CRA)",
-				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
-			},
-			{
-				name: "Styled Components",
-				description: "lorem simple to implement, customizable, great docs"
-			}
-		],
-		siteUrl: "https://conwayknowslife.dev",
-		githubUrl: "https://github.com/albertopfunk/Conways-Life",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-		slug: "game-of-life"
-	},
+	// {
+	// 	name: "NomCue",
+	// 	description:
+	// 		"This is my favorite project, and a project close to the heart. It started as a hackathon idea at lambda school, it is an idea that just popped up in my head when I saw the hackathon signup sheet. The idea was accepted and another student and I worked on it for 2 days, staying up all night building it, unfortunately we both fell asleep and missed the presentation so we did not win. We did post the app and video on it afterwards and got so much praise, many saying it would have definitely won, totally worth it! The description I came up with when I submitted this idea was, 'Don't know what to eat? open up our food suggestion app and let it suggest something for you!, If the suggestion does not satisfy you, just click x to get a new suggestion!'. It started as a 'Tinder for food' but I have since then expanded the idea to make it into more of a discovery app for food and activities.",
+	// 	features: [
+	// 		"Choose between food, activities or nightlife",
+	// 		"Select your city or any other city in the US",
+	// 		"Select a random suggestion or click next for another random suggestion",
+	// 		"Browse through local places when you select a suggestion"
+	// 	],
+	// 	tech: [
+	// 		{
+	// 			name: "NextJS",
+	// 			description:
+	// 				"lorem minimal interaction with DB, some pages are fully static, other ssr with minimal db interaction"
+	// 		},
+	// 		{
+	// 			name: "Tailwind CSS",
+	// 			description:
+	// 				"lorem paired with postcss-import, autoprefixer, purgecss"
+	// 		},
+	// 		{
+	// 			name: "NoSQL/MongoDB",
+	// 			description:
+	// 				"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
+	// 		},
+	// 		{
+	// 			name: "Isomorphic Unfetch",
+	// 			description:
+	// 				"lorem api created for this app fit best with mongoDBs document/json type structure, was looking for a json type structure, single request for full object data, relationships not needed"
+	// 		},
+	// 		{
+	// 			name: "ESLint/Prettier",
+	// 			description: "lorem straight forward requests"
+	// 		},
+	// 		{
+	// 			name: "Google Places",
+	// 			description: "lorem find local businesses"
+	// 		},
+	// 		{
+	// 			name: "Yelp",
+	// 			description: "lorem find local businesses"
+	// 		},
+	// 		{
+	// 			name: "Vercel",
+	// 			description: "lorem big community, simple to deploy"
+	// 		}
+	// 	],
+	// 	siteUrl: "https://nomcue.com",
+	// 	githubUrl: "",
+	// 	mediaUrl:
+	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+	// 	slug: "nomcue"
+	// },
+
+	// {
+	// 	name: "Conway's Game of Life",
+	// 	description: "Based on Conway's game of life.",
+	// 	features: [
+	// 		"Click on any cell to customize game",
+	// 		"Choose a preset",
+	// 		"Expand the number of cells"
+	// 	],
+	// 	tech: [
+	// 		{
+	// 			name: "React(CRA)",
+	// 			description:
+	// 				"lorem familiarity, big community, plenty of documentation, established, app feel"
+	// 		},
+	// 		{
+	// 			name: "Styled Components",
+	// 			description: "lorem simple to implement, customizable, great docs"
+	// 		}
+	// 	],
+	// 	siteUrl: "https://conwayknowslife.dev",
+	// 	githubUrl: "https://github.com/albertopfunk/Conways-Life",
+	// 	mediaUrl:
+	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+	// 	slug: "game-of-life"
+	// },
+
 	{
 		name: "Portfolio",
 		description:
