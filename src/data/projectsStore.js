@@ -66,24 +66,24 @@ export const projectSectionData = readable([
 			},
 			{
 				name: "ESLint/Prettier",
-				description: "lorem straight forward requests"
+				description: "These are a must for any development project. Prettier removes mental workload by automating code formatting and keeping code consistent. ESlint is the first safeguard against common errors that can be easily overlooked."
 			},
 			{
 				name: "Auth0",
-				description: "lorem login/sign up, auto log in, silent authentication"
+				description: "Security is immeasurable, having an established company with teams of security experts manage that for you is the best route for any project. Auth0 stands out with its developer experience, offering an intuitive dashboard and great documentation. Other features include customizable login pages, simple integration with 3rd party providers, a straightforward API, and much more."
 			},
 			{
 				name: "Stripe",
-				description: "lorem simple to implement, customizable, great docs"
+				description: "Like security, payments are something that should be managed by established companies that solely focus on that subject. Stripes developer experience is unmatched, with some of the best documentation out there. It also has a great dashboard, where a lot of customization can be done with a few clicks of a button."
 			},
 			{
 				name: "Google Places",
-				description: "lorem locations search and Gio location"
+				description: "Google offers many services that help with almost anything related to locations. Two services I use for this app are location autocomplete and gio location."
 			},
 			{
 				name: "Cloudinary",
 				description:
-					"lorem media storage, manipulation, CDN caching for faster delivery"
+					"Images are the biggest factor to web performance, they will almost certainly make or break your web app. Cloudinary helps by offering CDN caching for faster delivery, on demand image manipulation to serve properly sized images and more performant image types, and much more."
 			},
 			{
 				name: "Netlify",
