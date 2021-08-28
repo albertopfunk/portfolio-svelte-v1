@@ -49,21 +49,21 @@ export const projectSectionData = readable([
 				name: "Knex",
 				description: "Knex makes building queries more readable, it also helps with connections so I can connect multiple databases for development, testing, and production."
 			},
-			{
-				name: "Jest",
-				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
-			},
-			{
-				name: "React Testing Library Suite",
-				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
-			},
-			{
-				name: "Cypress",
-				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
-			},
+			// {
+			// 	name: "Jest",
+			// 	description:
+			// 		"lorem familiarity, big community, plenty of documentation, established, app feel"
+			// },
+			// {
+			// 	name: "React Testing Library Suite",
+			// 	description:
+			// 		"lorem familiarity, big community, plenty of documentation, established, app feel"
+			// },
+			// {
+			// 	name: "Cypress",
+			// 	description:
+			// 		"lorem familiarity, big community, plenty of documentation, established, app feel"
+			// },
 			{
 				name: "ESLint/Prettier",
 				description: "These are a must for any development project. Prettier removes mental workload by automating code formatting and keeping code consistent. ESlint is the first safeguard against common errors that can be easily overlooked."
@@ -86,12 +86,12 @@ export const projectSectionData = readable([
 					"Images are the biggest factor to web performance, they will almost certainly make or break your web app. Cloudinary helps by offering CDN caching for faster delivery, on demand image manipulation to serve properly sized images and more performant image types, and much more."
 			},
 			{
-				name: "Netlify",
-				description: "lorem big community, simple to deploy"
+				name: "Heroku",
+				description: " This is a great starter solution to get up and running with minimal effort. This was used to deploy the back end of tech profiles, using postgreSQL as the production database. The biggest drawback to Heroku is the time the server takes to wake up. This has me looking at other solutions like Supabase or Amazon RDS since they both support postgreSQL."
 			},
 			{
-				name: "Heroku",
-				description: "lorem big community, simple to deploy"
+				name: "Netlify",
+				description: "Similar to heroku, netlify is a great solution to get up and running quickly with minimal effort. This was used to deploy the front end of tech profiles."
 			}
 		],
 		siteUrl: "https://techprofiles.dev",
@@ -157,31 +157,31 @@ export const projectSectionData = readable([
 	// 	slug: "nomcue"
 	// },
 
-	// {
-	// 	name: "Conway's Game of Life",
-	// 	description: "Based on Conway's game of life.",
-	// 	features: [
-	// 		"Click on any cell to customize game",
-	// 		"Choose a preset",
-	// 		"Expand the number of cells"
-	// 	],
-	// 	tech: [
-	// 		{
-	// 			name: "React(CRA)",
-	// 			description:
-	// 				"lorem familiarity, big community, plenty of documentation, established, app feel"
-	// 		},
-	// 		{
-	// 			name: "Styled Components",
-	// 			description: "lorem simple to implement, customizable, great docs"
-	// 		}
-	// 	],
-	// 	siteUrl: "https://conwayknowslife.dev",
-	// 	githubUrl: "https://github.com/albertopfunk/Conways-Life",
-	// 	mediaUrl:
-	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-	// 	slug: "game-of-life"
-	// },
+	{
+		name: "Conway's Game of Life",
+		description: "Based on Conway's game of life.",
+		features: [
+			"Click on any cell to customize game",
+			"Choose a preset",
+			"Expand the number of cells"
+		],
+		tech: [
+			{
+				name: "React(CRA)",
+				description:
+					"lorem familiarity, big community, plenty of documentation, established, app feel"
+			},
+			{
+				name: "Styled Components",
+				description: "lorem simple to implement, customizable, great docs"
+			}
+		],
+		siteUrl: "https://conwayknowslife.dev",
+		githubUrl: "https://github.com/albertopfunk/Conways-Life",
+		mediaUrl:
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+		slug: "game-of-life"
+	},
 
 	{
 		name: "Portfolio",
@@ -196,15 +196,11 @@ export const projectSectionData = readable([
 			{
 				name: "Svelte with SvelteKit",
 				description:
-					"lorem trying out different tech, svelte seems like a formiddible contender to other major frameworks"
+					"When I first started using Svelte, it was still pretty new, so there weren't a lot of resources or established libraries for major things like routing. I still enjoyed it very much. Many things are more straightforward and intuitive, like using and passing props, JS in html(loops, conditionals), and lifecycles. It also has great built in features like event handlers with modifiers, data stores and animation. SvelteKit is a huge improvement, it feels a lot like NextJS, with file system routing with fallback pages, server and static rendering."
 			},
 			{
-				name: "Intersection Observer API",
-				description: "lorem keep track of element positions in the background"
-			},
-			{
-				name: "Netlify Forms",
-				description: "lorem contact form hooked up to netlify"
+				name: "Netlify Suite",
+				description: "I am a big fan of Netlify, they simplify many complex necessities of deploying projects. I am using Netlify to deploy my portfolio with the custom domain, using Netlify Forms for the contact form, and also plan on using Netlify CMS for blogging."
 			}
 		],
 		siteUrl: "https://albertopfunk.dev",
@@ -226,24 +222,16 @@ export const projectSectionData = readable([
 		],
 		tech: [
 			{
-				name: "JavaScript",
-				description: "lorem first feature example lorem"
-			},
-			{
-				name: "Node",
-				description: "lorem first feature example lorem"
-			},
-			{
-				name: "rimraf",
-				description: "lorem first feature example lorem"
+				name: "Node/rimraf",
+				description: "I used Nodes file system module to read chosen directories, this allowed me to remove files using the rimraf library."
 			},
 			{
 				name: "Rollup",
-				description: "lorem first feature example lorem"
+				description: "I chose this bundler for a few reasons, it is widely used for creating packages, I already had some experience using it with svelte, and it was the main bundler used to create rollup-plugins. I enjoy it because it is a straightforward and versatile bundler without the need of complex configurations."
 			},
 			{
 				name: "NPM",
-				description: "lorem first feature example lorem"
+				description: "Publishing packages with NPM is not as complex as I first thought, most of the steps can be done with a few CLI commands and package.json configurations. Even though I am currently the only user, I still feel proud of having my own package published on NPM!"
 			}
 		],
 		siteUrl: "https://github.com/albertopfunk/Portfolio-Svelte-v1--DEMO",
