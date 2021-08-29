@@ -78,9 +78,9 @@
 		<div class="text-container short" class:hidden={introBioLength !== "short"}>
 			<ul class="text">
 				<li>Started career in the healthcare industry.</li>
-				<li>Tinkering on the web over the years.</li>
-				<li>Started coding by moving turtles with python.</li>
-				<li>Solidified skills by attending lambda school and self learning.</li>
+				<li>Tinkering with different web platforms over the years.</li>
+				<li>Started coding by moving turtles with Python.</li>
+				<li>Developed skills by attending Lambda School.</li>
 				<li>
 					Currently looking for opportunities to learn and grow as a developer.
 				</li>
@@ -93,26 +93,26 @@
 		>
 			<div class="text">
 				<p>
-					I started my career in the healthcare industry as an EMT, shortly
-					thereafter went into dispatching. I got conformable as a dispatcher, I
-					was also pretty good at it thanks to a great mentor. I knew this
-					wasn't a career I wanted though.
+					I worked most of my career as a dispatcher in the healthcare industry.
+					I knew this wasn't a career I wanted though, to me it was more of a
+					comfortable stable office job.
 				</p>
 				<p>
 					Throughout the years I started tinkering with different things on the
-					web. I would sell products online using different platforms. This
-					introduced me to things like online marketing, sales, seo, building
-					pages, creating eproducts, etc. My favorite of any of this was always
-					the building.
+					web, using different platforms like funnel platforms and Shopify. This
+					introduced me to things like online marketing, sales, e-commerce, SEO,
+					building pages, etc.
 				</p>
 				<p>
-					I started coding by moving turtles with python, then I quickly moved
-					into front end development. The idea to be able to build almost
-					anything I can think of drew me right in.
+					I wanted to learn a valuable and actionable skill, this led me to
+					software development. I started with Python, then moved into front-end
+					development. The idea of being able to build almost anything I can
+					think of drew me right in.
 				</p>
 				<p>
-					I solidified my skills and foundations by attending lambda school and
-					through self learning.
+					I was self-learning but felt directionless. I wanted to start with a
+					strong foundation. I found Lambda School and was accepted to their
+					full-stack 9 month-long Bootcamp.
 				</p>
 				<p>
 					I have been building and learning on the side since then. Now I am
@@ -125,7 +125,7 @@
 			<div class="text">
 				<p>
 					I started my career in the healthcare industry as an EMT(before that I
-					worked at random jobs, mostly in the food industry). Shortly after, I
+					worked random jobs, mostly in the food industry). Shortly after, I
 					injured my back for lifting a patient without proper technique. I
 					started dispatching there as light-duty while I healed. One week to
 					heal, turned into 3 months to cover while they hired a new dispatcher,
@@ -136,29 +136,37 @@
 				</p>
 				<p>
 					Throughout the years I started tinkering with different things on the
-					web, using different platforms like funnel marketing, Amazon, Shopify,
-					even using an MLM blog platform. This introduced me to things like
-					online marketing, sales, SEO, building landing pages, creating
-					e-products, etc. My favorite part of this was always the building.
-					Building the funnel pages, marketing ads, ebook+content, and
-					especially the Shopify stores, customizing all those cool themes.
+					web, using different platforms like funnel platforms, Amazon
+					marketplace, Shopify, even using an MLM blog platform. This introduced
+					me to things like online marketing, sales, e-commerce, SEO, building
+					landing pages, and creating e-products. My favorite part would always
+					be building the funnel pages, marketing ads, and especially the
+					Shopify stores, customizing all those cool themes that I kept buying.
 				</p>
 				<p>
-					This led me into coding, I started with python making turtles move,
-					then I moved into frontend development, I was always limited to the
-					themes and prebuilt pages when it came to building, so the idea of
-					being able to build almost anything I can think of drew me right in.
+					This led me to software development. I knew at the time that I wanted
+					to learn a valuable and actionable skill, and seeing those outrageous
+					prices I was getting from Shopify developers, to do something like
+					creating a double column, made me take a serious look into this
+					career. I started with Python, using the Turtle library to draw and
+					make turtles move. I then moved into front-end development, I was
+					always limited to the themes and prebuilt pages when it came to
+					building, so the idea of being able to build almost anything I can
+					think of drew me right in.
 				</p>
 				<p>
-					I wanted to solidify my skills and foundation with coding. After a lot
-					of research, I found lambda school, the things that attracted me to
-					lambda was that they were one of the only bootcamps that had a section
-					on computer science fundamentals and that I did not have to pay 10k+
-					upfront to attend, also they were fully remote so that was a huge
-					convenience for me.
+					I was still pretty directionless, watching random tutorials on
+					YouTube, not knowing whether I was doing things right. I wanted to
+					start with a strong foundation and a sense of direction. After a lot
+					of research, I found Lambda School and was accepted to their
+					full-stack 9 month-long Bootcamp. The things that attracted me to
+					lambda were that they were one of the only Bootcamps that was longer
+					than 3 months and had a section on computer science fundamentals.
+					Also, I did not have to pay 10k+ upfront to attend and they were fully
+					remote so that was very convenient.
 				</p>
 				<p>
-					Shortly after completing lambda school, I went on a hiatus. This was a
+					Shortly after completing Lambda School, I went on a hiatus. This was a
 					difficult time in my life, my mom was in her final stages of life
 					after a long battle with cancer, she passed away that year. She was
 					the most caring, loving, strongest person I knew. When I first started

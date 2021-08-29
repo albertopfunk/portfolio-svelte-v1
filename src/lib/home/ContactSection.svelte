@@ -10,9 +10,9 @@
 	<h2>Get in Touch</h2>
 	<p>
 		I'm currently looking for opportunities where I will be able to learn and
-		grow as a developer. I love and believe in the web, I am especially
-		interested in roles where I get to work on different aspects of the web,
-		build complex UI, work on accessibility, etc.
+		grow as a developer with great teammates and mentorship. I love and believe
+		in the web, I am especially interested in roles where I get to work on
+		complex UIs and web apps, usability, and different aspects of the web.
 	</p>
 	<form on:submit|preventDefault={handleSubmit}>
 		<div>
