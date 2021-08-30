@@ -57,8 +57,8 @@
 	}
 
 	nav.projects {
-		border-color: var(--red-color);
-		outline-color: var(--red-color);
+		border-color: var(--dark-magenta-color);
+		outline-color: var(--dark-magenta-color);
 		box-shadow: 0 0 20px rgba(var(--red-value), 0.8);
 	}
 
