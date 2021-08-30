@@ -57,9 +57,9 @@
 	}
 
 	nav.projects {
-		border-color: var(--lighter-violet-color);
-		outline-color: var(--lighter-violet-color);
-		box-shadow: 0 0 20px rgba(var(--lighter-violet-value), 0.8);
+		border-color: var(--red-color);
+		outline-color: var(--red-color);
+		box-shadow: 0 0 20px rgba(var(--red-value), 0.8);
 	}
 
 	nav.contact {

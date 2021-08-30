@@ -47,8 +47,8 @@ html {
 	background: var(--darker-violet-color);
 	background: linear-gradient(
 		to bottom,
-		var(--darker-violet-color) 0%,
-		var(--darker-magenta-color) 40%,
+		var(--dark-violet-color) 0%,
+		var(--darker-violet-color) 40%,
 		var(--darkest-violet-color) 100%
 	);
 	color: var(--lighter-violet-color);

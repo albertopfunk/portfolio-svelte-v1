@@ -127,9 +127,9 @@
 				max-width: 350px; /*fit-content fallback*/
 				height: auto;
 				fill: transparent;
-				stroke: rgba(var(--red-value), 0.5);
+				stroke: rgba(var(--red-value), 0.7);
 				stroke-width: 1px;
-				filter: drop-shadow(2px 2px 0 rgba(var(--darkest-violet-value), 0.8));
+				filter: drop-shadow(2px 2px 0 rgba(var(--red-value), 0.8));
 
 				@media (min-width: 650px) {
 					max-width: 450px;
