@@ -4,7 +4,7 @@ export const projectSectionData = readable([
 	{
 		name: "Tech Profiles",
 		description:
-			"The first version of this web app was my capstone project(when I attended lambda school). It was a 5-week team built project, each team had a PM who would review PRs and merge them. I learned more in those 5 weeks than 6 months of self learning, building fully functioning web apps with a team and a deadline is such a great experience. I left the app as is after the 5 weeks to show what we accomplished in that time, and started version 2, which was renamed to tech profiles. I have been working on tech profiles on the side since then. It is a discovery app for people in tech, where they can create a profile for others to see.",
+			"The first version of this web app was my capstone project(when I attended Lambda School). It was a 5-week, team-built project where each team had a PM who would review PRs and merge them. I learned more in those five weeks than six months of self-learning. Building fully functioning web apps with a team and a deadline is such a great experience. I left the app as-is after the five weeks to show what we accomplished in that time. I started version 2, which I renamed to tech profiles, and have been working on it on the side since then. It is a discovery app for people in tech, where they can create a profile for others to see.",
 		features: [
 			"Infinite scroll with pagination",
 			"Sort profiles",
@@ -24,30 +24,32 @@ export const projectSectionData = readable([
 			{
 				name: "Styled Components",
 				description:
-					"This is usually my go to styling library since it has SASS-like powers plus much more, including props and encapsulation of styles making reusability more viable."
+					"This is usually my go-to styling library since it has SASS-like powers plus much more, including props and encapsulation of styles, making reusability more viable."
 			},
 			{
 				name: "React Router",
 				description:
-					"Routing logic does not come out of the box for React, this library is the most established and maintained. It also has a bright future, with the creator of react router and reach router both collaborating on future releases, fixing accessibility issues of react router and much more."
+					"Routing logic does not come out of the box for React, and this library is the most established and maintained. It also has a bright future, with the creator of React Router and Reach Router both collaborating on future releases, fixing accessibility issues of React Router, and much more."
 			},
 			{
 				name: "React Helmet",
 				description:
-					"I feel like this should be out of the box for React since it is very important. Being able to change <head> tags like meta descriptions and titles help with many things, like accessibility(screen readers announcing titles), usability(being able to see titles in tabs), and SEO(page descriptions)."
+					"This is something that should be out of the box for React since it is very important. Being able to change <head> tags like meta descriptions and titles help with many things, like accessibility(screen readers announcing titles), usability(being able to see titles in tabs), and SEO(page descriptions)."
 			},
 			{
 				name: "Node with Express",
 				description:
-					"Most of my focus right now is with front-end technologies and JS, so I want to stay within the JS ecosystem to interact with databases. With the help of express, it makes creating APIs much more approachable."
+					"Most of my focus right now is on front-end technologies and JS, so I want to stay within the JS ecosystem to interact with databases. With the help of express, it makes creating APIs much more approachable."
 			},
 			{
 				name: "SQL with PostgreSQL",
-				description: "Even though most of my focus is with front-end technology, I know the importance of knowing this querying language. PostgreSQL is widely used in production and available with many services."
+				description:
+					"Even though most of my focus is on front-end technology, I know the importance of knowing this querying language. PostgreSQL is widely used in production and is available with many services."
 			},
 			{
 				name: "Knex",
-				description: "Knex makes building queries more readable, it also helps with connections so I can connect multiple databases for development, testing, and production."
+				description:
+					"Knex makes building queries more readable with familiar JS style methods and responses. It also helps with connections to connect with multiple databases for development, testing, and production."
 			},
 			// {
 			// 	name: "Jest",
@@ -66,32 +68,38 @@ export const projectSectionData = readable([
 			// },
 			{
 				name: "ESLint/Prettier",
-				description: "These are a must for any development project. Prettier removes mental workload by automating code formatting and keeping code consistent. ESlint is the first safeguard against common errors that can be easily overlooked."
+				description:
+					"These are a must for any development project. Prettier removes mental workload by automating code formatting and keeps code consistent. ESLint is the first safeguard against common errors that are easily overlooked."
 			},
 			{
 				name: "Auth0",
-				description: "Security is immeasurable, having an established company with teams of security experts manage that for you is the best route for any project. Auth0 stands out with its developer experience, offering an intuitive dashboard and great documentation. Other features include customizable login pages, simple integration with 3rd party providers, a straightforward API, and much more."
+				description:
+					"Security is immeasurable, having an established company with teams of security experts manage that for you is the best route for any project. Auth0 stands out with its developer experience, offering an intuitive dashboard and great documentation. Other features include customizable login pages, simple integration with 3rd party providers, a straightforward API, and much more."
 			},
 			{
 				name: "Stripe",
-				description: "Like security, payments are something that should be managed by established companies that solely focus on that subject. Stripes developer experience is unmatched, with some of the best documentation out there. It also has a great dashboard, where a lot of customization can be done with a few clicks of a button."
+				description:
+					"Like security, payments should be managed by established companies that solely focus on that subject. Stripe's developer experience is unmatched, with some of the best documentation out there. It also has a great dashboard, where a lot of customization can be done with a few clicks of a button."
 			},
 			{
 				name: "Google Places",
-				description: "Google offers many services that help with almost anything related to locations. Two services I use for this app are location autocomplete and gio location."
+				description:
+					"Google offers many services that help with almost anything related to locations. Two services I use for this app are location autocomplete and GIO location."
 			},
 			{
 				name: "Cloudinary",
 				description:
-					"Images are the biggest factor to web performance, they will almost certainly make or break your web app. Cloudinary helps by offering CDN caching for faster delivery, on demand image manipulation to serve properly sized images and more performant image types, and much more."
+					"Images are the biggest factor in web performance, they will almost certainly make or break your web app. Cloudinary helps by offering CDN caching for faster delivery, on-demand image manipulation to serve different sized images and more performant image types, and much more."
 			},
 			{
 				name: "Heroku",
-				description: " This is a great starter solution to get up and running with minimal effort. This was used to deploy the back end of tech profiles, using postgreSQL as the production database. The biggest drawback to Heroku is the time the server takes to wake up. This has me looking at other solutions like Supabase or Amazon RDS since they both support postgreSQL."
+				description:
+					"This is a great starter solution to get up and running with minimal effort. This was used to deploy the back end of tech profiles, using PostgreSQL as the production database. The biggest drawback to Heroku is the time the server takes to wake up, which has me looking at other solutions like Supabase or Amazon RDS since they both support PostgreSQL."
 			},
 			{
 				name: "Netlify",
-				description: "Similar to heroku, netlify is a great solution to get up and running quickly with minimal effort. This was used to deploy the front end of tech profiles."
+				description:
+					"Like Heroku, this is a great solution to get up and running with minimal effort. This was used to deploy the front end of tech profiles."
 			}
 		],
 		siteUrl: "https://techprofiles.dev",
@@ -157,36 +165,36 @@ export const projectSectionData = readable([
 	// 	slug: "nomcue"
 	// },
 
-	{
-		name: "Conway's Game of Life",
-		description: "Based on Conway's game of life.",
-		features: [
-			"Click on any cell to customize game",
-			"Choose a preset",
-			"Expand the number of cells"
-		],
-		tech: [
-			{
-				name: "React(CRA)",
-				description:
-					"lorem familiarity, big community, plenty of documentation, established, app feel"
-			},
-			{
-				name: "Styled Components",
-				description: "lorem simple to implement, customizable, great docs"
-			}
-		],
-		siteUrl: "https://conwayknowslife.dev",
-		githubUrl: "https://github.com/albertopfunk/Conways-Life",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-		slug: "game-of-life"
-	},
+	// {
+	// 	name: "Conway's Game of Life",
+	// 	description: "Based on Conway's game of life.",
+	// 	features: [
+	// 		"Click on any cell to customize game",
+	// 		"Choose a preset",
+	// 		"Expand the number of cells"
+	// 	],
+	// 	tech: [
+	// 		{
+	// 			name: "React(CRA)",
+	// 			description:
+	// 				"lorem familiarity, big community, plenty of documentation, established, app feel"
+	// 		},
+	// 		{
+	// 			name: "Styled Components",
+	// 			description: "lorem simple to implement, customizable, great docs"
+	// 		}
+	// 	],
+	// 	siteUrl: "https://conwayknowslife.dev",
+	// 	githubUrl: "https://github.com/albertopfunk/Conways-Life",
+	// 	mediaUrl:
+	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+	// 	slug: "game-of-life"
+	// },
 
 	{
 		name: "Portfolio",
 		description:
-			"I LOVE neon-noir synthwave type themes, the nostalgia, visuals, and sounds of it all(there needs to be more movies like blade runner 2049 and drive!). I see too many portfolios that are very similar, doing the same animations with boring(sorry) layouts. I did not want to follow that path, my portfolio represents me and what I love.",
+			"I LOVE neon-noir/synthwave type themes, the nostalgia, visuals, and sounds of it all(there needs to be more movies like blade runner 2049 and drive!). I see too many similar portfolios, doing the same animations with bland layouts. I did not want to follow that path, my portfolio represents me and what I love, even if it's a bit eccentric.",
 		features: [
 			"In-page navigation",
 			"Reduced motion if preferred",
@@ -196,11 +204,12 @@ export const projectSectionData = readable([
 			{
 				name: "Svelte with SvelteKit",
 				description:
-					"When I first started using Svelte, it was still pretty new, so there weren't a lot of resources or established libraries for major things like routing. I still enjoyed it very much. Many things are more straightforward and intuitive, like using and passing props, JS in html(loops, conditionals), and lifecycles. It also has great built in features like event handlers with modifiers, data stores and animation. SvelteKit is a huge improvement, it feels a lot like NextJS, with file system routing with fallback pages, server and static rendering."
+					"When I first started using Svelte, it was still pretty new, so there weren't a lot of resources or established libraries for major things like routing. I still enjoyed it very much. Many things are more straightforward and intuitive, like using and passing props, JS in HTML(loops, conditionals), and lifecycles. It also has great built-in features like event handlers with modifiers, data stores, the ability to insert elements into the document head, and animations. SvelteKit is a huge improvement, it feels a lot like NextJS, with file system routing with fallback pages, server, and static rendering."
 			},
 			{
 				name: "Netlify Suite",
-				description: "I am a big fan of Netlify, they simplify many complex necessities of deploying projects. I am using Netlify to deploy my portfolio with the custom domain, using Netlify Forms for the contact form, and also plan on using Netlify CMS for blogging."
+				description:
+					"I am a big fan of Netlify, they simplify many complex necessities of deploying projects. I am using Netlify to deploy my portfolio with the custom domain, using Netlify Forms for the contact form, and also plan on using Netlify CMS for blogging."
 			}
 		],
 		siteUrl: "https://albertopfunk.dev",
@@ -212,7 +221,7 @@ export const projectSectionData = readable([
 	{
 		name: "rollup-plugin-fresh",
 		description:
-			"While I was building the first verson of my portfolio with svelte(before sveltekit), I was using a routing library(navaid) that allows for esm routing and prerendering, combined with svelte I thought it would be cool to explore this. Because I was using rollup to compile into esm, all the files would go into one directory. During development, rollup created new files everytime I made changes to code, so the directory would quickly get out of hand and I would have multiple files I had to remove manually. I reversed engineered a few packages that removed files from directories to create this tool, It helped me by removing all the files on startup so I would not have to.",
+			"While I was building the first version of my portfolio with Svelte(before SvelteKit), I was using a routing library(Navaid) that allows for ESM routing and prerendering, combined with Svelte, I thought it would be cool to explore this. Because I was using Rollup to compile into ESM, all the files would go into one directory. During development, Rollup created new files every time I made changes to code, so the directory would quickly get out of hand and I would have multiple files I had to remove manually. I reversed engineered a few packages that removed files from directories to create this tool, It helped me by removing all the files on startup so I would not have to.",
 		features: [
 			"Choose any directory and remove all files",
 			"Target files not to remove",
@@ -223,15 +232,18 @@ export const projectSectionData = readable([
 		tech: [
 			{
 				name: "Node/rimraf",
-				description: "I used Nodes file system module to read chosen directories, this allowed me to remove files using the rimraf library."
+				description:
+					"I used Node's file system module to read chosen directories, this allowed me to remove files using the rimraf library."
 			},
 			{
 				name: "Rollup",
-				description: "I chose this bundler for a few reasons, it is widely used for creating packages, I already had some experience using it with svelte, and it was the main bundler used to create rollup-plugins. I enjoy it because it is a straightforward and versatile bundler without the need of complex configurations."
+				description:
+					"I chose this bundler for a few reasons, it is widely used for creating packages, I already had some experience using it with Svelte, and it was the main bundler used to create Rollup plugins. I enjoy it because it is a straightforward and versatile bundler without the need for complex configurations."
 			},
 			{
 				name: "NPM",
-				description: "Publishing packages with NPM is not as complex as I first thought, most of the steps can be done with a few CLI commands and package.json configurations. Even though I am currently the only user, I still feel proud of having my own package published on NPM!"
+				description:
+					"Publishing packages with NPM is not as complex as I first thought, most of the steps can be done with a few CLI commands and package.json configurations. Even though I am currently the only user, I still feel proud of having my own package published on NPM!"
 			}
 		],
 		siteUrl: "https://github.com/albertopfunk/Portfolio-Svelte-v1--DEMO",
