@@ -1,5 +1,8 @@
 <script>
 	import { afterUpdate, onMount } from "svelte";
+
+	import ContentSpacer from "$lib/ContentSpacer.svelte";
+
 	export let introPosition;
 	export let unObserveEl;
 
@@ -26,7 +29,7 @@
 
 <section id="about-me" data-section="intro" bind:this={introPosition}>
 	<h2>About Me</h2>
-
+	<ContentSpacer size="sm" />
 	<div class="bio-container">
 		<div
 			class="visually-hidden"
@@ -245,7 +248,7 @@
 	.text {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 25px;
 	}
 
 	ul {

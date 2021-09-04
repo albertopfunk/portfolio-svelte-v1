@@ -1,12 +1,14 @@
 <script>
 	import { onMount } from "svelte";
 	import { browser } from "$app/env";
+
 	import PageNav from "$lib/home/PageNav.svelte";
 	import IntroSection from "$lib/home/IntroSection.svelte";
 	import ProjectsSection from "$lib/home/ProjectsSection.svelte";
 	import ContactSection from "$lib/home/ContactSection.svelte";
 	import PalmTreesSpacer from "$lib/PalmTreesSpacer.svelte";
-	import ScrollDownSpacer from "$lib/ScrollDownSpacer.svelte";
+	import IntroSpacer from "$lib/IntroSpacer.svelte";
+	import ContentSpacer from "$lib/ContentSpacer.svelte";
 
 	let currentSection = null;
 	let heroPosition;
@@ -87,20 +89,24 @@
 
 <PageNav {currentSection} />
 <main>
-	<div bind:this={heroPosition}>
-		<div class="hero-intro" data-section="hero">
+	<div bind:this={heroPosition} data-section="hero">
+		<div class="hero-intro">
+			<ContentSpacer size="sm" />
 			<h1 class="hero-heading">Alberto Preciado</h1>
 			<p class="hero-subheading">Front-End Developer</p>
+			<ContentSpacer size="xxlg-d" />
 			<div class="hero-sun" />
 		</div>
 		<PalmTreesSpacer />
-		<ScrollDownSpacer />
+		<IntroSpacer />
 	</div>
-
+	<ContentSpacer size="xxlg-d" />
 	<IntroSection bind:introPosition {unObserveEl} />
 	<PalmTreesSpacer />
+	<ContentSpacer size="lg" />
 	<ProjectsSection bind:projectsPosition />
 	<PalmTreesSpacer />
+	<ContentSpacer size="lg" />
 	<ContactSection bind:contactPosition />
 </main>
 
@@ -109,6 +115,7 @@
 		height: 45vh;
 		overflow: hidden;
 		text-align: center;
+		padding: 0 2px;
 	}
 
 	.hero-heading {
@@ -123,10 +130,6 @@
 	}
 
 	.hero-sun {
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, 0);
 		width: 100%;
 		height: auto;
 		padding-top: 100%;
@@ -153,19 +156,9 @@
 		box-shadow: 0 5px 30px rgba(var(--yellow-value), 0.8);
 	}
 
-	@media (min-width: 400px) {
-		.hero-intro {
-			padding-top: 10px;
-		}
-	}
-
 	@media (min-width: 650px) {
 		.hero-intro {
-			height: 50vh;
-		}
-
-		.hero-sun {
-			top: 30%;
+			height: 55vh;
 		}
 
 		.hero-subheading {
@@ -176,11 +169,7 @@
 
 	@media (min-width: 1050px) {
 		.hero-intro {
-			height: 60vh;
-		}
-
-		.hero-sun {
-			top: 25%;
+			height: 65vh;
 		}
 	}
 

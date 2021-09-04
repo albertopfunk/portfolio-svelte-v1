@@ -1,4 +1,5 @@
 <script>
+	import ContentSpacer from "$lib/ContentSpacer.svelte";
 	export let contactPosition;
 
 	function handleSubmit() {
@@ -8,6 +9,7 @@
 
 <section id="contact" data-section="contact" bind:this={contactPosition}>
 	<h2>Get in Touch</h2>
+	<ContentSpacer size="sm" />
 	<p>
 		I'm currently looking for opportunities where I will be able to learn and
 		grow as a developer with great teammates and mentorship. I love and believe
@@ -17,18 +19,21 @@
 	<form on:submit|preventDefault={handleSubmit}>
 		<div>
 			<label for="name">Name:</label>
+			<ContentSpacer size="xsm" />
 			<input type="text" id="name" autocomplete="name" required />
 		</div>
 		<div>
 			<label for="email">Email:</label>
+			<ContentSpacer size="xsm" />
 			<input type="email" autocomplete="email" required />
 		</div>
 		<div>
 			<label for="message">Message:</label>
+			<ContentSpacer size="xsm" />
 			<textarea name="message" id="message" rows="10" required />
 		</div>
 		<div>
-			<button type="submit"> Send </button>
+			<button type="submit">Send</button>
 		</div>
 	</form>
 	<div class="mountains-container">
@@ -79,6 +84,9 @@
 	form {
 		width: 95%;
 		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
 		padding: 0 10px;
 		margin: 0 auto;
 		z-index: 21; /*+1 mountains svg*/
@@ -112,6 +120,19 @@
 		outline-offset: 3px;
 		box-shadow: 0 0 20px rgba(var(--darker-magenta-value), 0.8);
 	}
+
+	/* button.success {
+		border-radius: 50%;
+		padding: 10px 40px;
+		outline: none;
+		color: var(--dark-violet-color);
+		box-shadow: 0 10px 20px rgba(245, 245, 245, 0.5);
+	}
+
+	button.success-move {
+		transition: transform 2s ease-out;
+		transform: translate(999px, 999px);
+	} */
 
 	button:focus,
 	button:hover {
