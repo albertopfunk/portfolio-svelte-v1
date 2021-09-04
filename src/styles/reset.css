@@ -71,12 +71,6 @@ html {
 	html {
 		scroll-behavior: smooth;
 	}
-
-	*,
-	*:before,
-	*:after {
-		transition: all 0.2s ease;
-	}
 }
 
 html,
@@ -108,7 +102,7 @@ body:before {
 	left: 0;
 	right: 0;
 	z-index: -1;
-	background: rgba(var(--darkest-violet-value), .5);
+	background: rgba(var(--darkest-violet-value), 0.5);
 }
 
 /**
@@ -299,7 +293,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.777rem;
+	font-size: 1.655rem;
 }
 
 h3 {
@@ -307,8 +301,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1rem;
-	/*same size as text*/
+	font-size: 1.155rem;
 }
 
 p,
@@ -333,6 +326,18 @@ legend {
 @media (min-width: 350px) {
 	h1 {
 		font-size: 2.369rem;
+	}
+
+	h2 {
+		font-size: 1.777rem;
+	}
+
+	h3 {
+		font-size: 1.655rem;
+	}
+
+	h4 {
+		font-size: 1.333rem;
 	}
 }
 
