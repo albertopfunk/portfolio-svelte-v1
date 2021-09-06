@@ -81,9 +81,17 @@
 				class:error={submitStatus === submitStates.error}
 				type="submit"
 			>
-				{submitStatus === submitStates.idle ? "Send" : null}
-				{submitStatus === submitStates.success ? "Success!" : null}
-				{submitStatus === submitStates.error ? "Error, retry" : null}
+				{#if submitStatus === submitStates.idle}
+					Send
+				{/if}
+
+				{#if submitStatus === submitStates.success}
+					Success!
+				{/if}
+
+				{#if submitStatus === submitStates.error}
+					Error, retry
+				{/if}
 			</button>
 		</div>
 	</form>
