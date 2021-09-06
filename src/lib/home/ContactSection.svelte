@@ -1,10 +1,12 @@
 <script>
 	import ContentSpacer from "$lib/ContentSpacer.svelte";
 	export let contactPosition;
-
-	function handleSubmit() {
-		console.log("hello");
-	}
+	/*
+		on:submit|preventDefault={handleSubmit}
+		function handleSubmit() {
+			console.log("hello");
+		}
+	*/
 </script>
 
 <section id="contact" data-section="contact" bind:this={contactPosition}>
@@ -16,16 +18,27 @@
 		in the web, I am especially interested in roles where I get to work on
 		complex UIs and web apps, usability, and different aspects of the web.
 	</p>
-	<form on:submit|preventDefault={handleSubmit}>
+	<form name="test" method="post" netlify netlify-honeypot="bot-field">
+		<input type="hidden" name="form-name" value="test" />
+		<div style="display: none;">
+			<label for="bot">Enter:</label>
+			<input type="text" id="bot" name="bot-field" />
+		</div>
 		<div>
 			<label for="name">Name:</label>
 			<ContentSpacer size="xsm" />
-			<input type="text" id="name" autocomplete="name" required />
+			<input type="text" id="name" name="name" autocomplete="name" required />
 		</div>
 		<div>
 			<label for="email">Email:</label>
 			<ContentSpacer size="xsm" />
-			<input type="email" autocomplete="email" required />
+			<input
+				type="email"
+				id="email"
+				name="email"
+				autocomplete="email"
+				required
+			/>
 		</div>
 		<div>
 			<label for="message">Message:</label>
