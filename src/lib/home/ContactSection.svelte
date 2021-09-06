@@ -2,7 +2,13 @@
 	import ContentSpacer from "$lib/ContentSpacer.svelte";
 	export let contactPosition;
 
+	const submitStates = {
+		idle: "idle",
+		success: "success",
+		error: "error"
+	};
 	let contactForm;
+	let submitStatus = submitStates.idle;
 	async function handleSubmit() {
 		let formData = new FormData(contactForm);
 		return fetch("/", {
@@ -11,12 +17,18 @@
 			body: new URLSearchParams(formData).toString()
 		})
 			.then(() => {
-				console.log("Form successfully submitted");
 				contactForm.reset();
+				submitStatus = submitStates.success;
+				setTimeout(() => {
+					submitStatus = submitStates.idle;
+				}, 1000);
 			})
 			.catch((error) => {
-				console.log("Error", error);
-				contactForm.reset();
+				console.error("Error", error);
+				submitStatus = submitStates.error;
+				setTimeout(() => {
+					submitStatus = submitStates.idle;
+				}, 1000);
 			});
 	}
 </script>
@@ -64,7 +76,15 @@
 			<textarea name="message" id="message" rows="10" required />
 		</div>
 		<div>
-			<button type="submit">Send</button>
+			<button
+				class:success={submitStatus === submitStates.success}
+				class:error={submitStatus === submitStates.error}
+				type="submit"
+			>
+				{submitStatus === submitStates.idle ? "Send" : null}
+				{submitStatus === submitStates.success ? "Success!" : null}
+				{submitStatus === submitStates.error ? "Error, retry" : null}
+			</button>
 		</div>
 	</form>
 	<div class="mountains-container">
