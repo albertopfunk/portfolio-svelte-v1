@@ -1,12 +1,24 @@
 <script>
 	import ContentSpacer from "$lib/ContentSpacer.svelte";
 	export let contactPosition;
-	/*
-		on:submit|preventDefault={handleSubmit}
-		function handleSubmit() {
-			console.log("hello");
-		}
-	*/
+
+	let contactForm;
+	async function handleSubmit() {
+		let formData = new FormData(contactForm);
+		return fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: new URLSearchParams(formData).toString()
+		})
+			.then(() => {
+				console.log("Form successfully submitted");
+				contactForm.reset();
+			})
+			.catch((error) => {
+				console.log("Error", error);
+				contactForm.reset();
+			});
+	}
 </script>
 
 <section id="contact" data-section="contact" bind:this={contactPosition}>
@@ -20,7 +32,8 @@
 	</p>
 	<form
 		name="home-contact-form"
-		method="post"
+		bind:this={contactForm}
+		on:submit|preventDefault={handleSubmit}
 		netlify
 		netlify-honeypot="bot-field"
 	>
