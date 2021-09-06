@@ -24,6 +24,7 @@
 		netlify
 		netlify-honeypot="bot-field"
 	>
+		<input type="hidden" name="form-name" value="home-contact-form" />
 		<div style="display: none;">
 			<label for="bot">Enter:</label>
 			<input type="text" id="bot" name="bot-field" />
