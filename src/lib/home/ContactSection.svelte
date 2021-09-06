@@ -18,8 +18,12 @@
 		in the web, I am especially interested in roles where I get to work on
 		complex UIs and web apps, usability, and different aspects of the web.
 	</p>
-	<form name="test" method="post" netlify netlify-honeypot="bot-field">
-		<input type="hidden" name="form-name" value="test" />
+	<form
+		name="home-contact-form"
+		method="post"
+		netlify
+		netlify-honeypot="bot-field"
+	>
 		<div style="display: none;">
 			<label for="bot">Enter:</label>
 			<input type="text" id="bot" name="bot-field" />
