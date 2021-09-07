@@ -65,6 +65,8 @@ html {
 	box-sizing: inherit;
 	position: relative;
 	color: inherit;
+	outline-width: 2.5px;
+  outline-color: var(--lighter-violet-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {

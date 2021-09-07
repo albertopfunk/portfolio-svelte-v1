@@ -107,7 +107,7 @@
 		align-items: center;
 	}
 
-	a:hover {
+	a:hover, a:focus {
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
 	}

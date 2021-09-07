@@ -9,7 +9,7 @@
 	<div class="spacer-item">
 		<a href="https://twitter.com/albertopfunk" target="_blank" rel="noreferrer">
 			<span class="visually-hidden">twitter profile. opens in new tab</span>
-			<TwitterIcon hidden />
+			<TwitterIcon hidden lightViolet />
 		</a>
 
 		<a
@@ -18,7 +18,7 @@
 			rel="noreferrer"
 		>
 			<span class="visually-hidden">linkedin profile. opens in new tab</span>
-			<LinkedinIcon hidden />
+			<LinkedinIcon hidden lightViolet />
 		</a>
 	</div>
 
@@ -32,7 +32,7 @@
 	<div class="spacer-item">
 		<a href="https://github.com/albertopfunk" target="_blank" rel="noreferrer">
 			<span class="visually-hidden">github profile. opens in new tab</span>
-			<GithubIcon hidden />
+			<GithubIcon hidden lightViolet />
 		</a>
 	</div>
 </div>
@@ -79,6 +79,14 @@
 		& :global(svg) {
 			height: 100%;
 			width: auto;
+		}
+
+		& :global(a:focus svg.repeat-violet) {
+			fill: url("#violet-repeat-gradient");
+		}
+
+		& :global(a:focus svg.lightViolet) {
+			fill: url("#violet-gradient");
 		}
 	}
 </style>
