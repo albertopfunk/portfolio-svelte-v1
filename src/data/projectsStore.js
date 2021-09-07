@@ -194,7 +194,7 @@ export const projectSectionData = readable([
 	{
 		name: "Portfolio",
 		description:
-			"I LOVE neon-noir/synthwave type themes, the nostalgia, visuals, and sounds of it all(there needs to be more movies like blade runner 2049 and drive!). I see too many similar portfolios, doing the same animations with bland layouts. I did not want to follow that path, my portfolio represents me and what I love, even if it's a bit eccentric.",
+			"My portfolio is basically an open canvas for the things I enjoy. It's a bit out there but I am having a lot of fun building it. I am a big fan of sci-fi/fantasy and synthwave/retrowave type themes so I am making that a central theme of my portfolio. It still needs work and there are many items on my stretch list but I am excited to keep developing it!",
 		features: [
 			"In-page navigation",
 			"Reduced motion if preferred",
@@ -207,12 +207,12 @@ export const projectSectionData = readable([
 					"When I first started using Svelte, it was still pretty new, so there weren't a lot of resources or established libraries for major things like routing. I still enjoyed it very much. Many things are more straightforward and intuitive, like using and passing props, JS in HTML(loops, conditionals), and lifecycles. It also has great built-in features like event handlers with modifiers, data stores, the ability to insert elements into the document head, and animations. SvelteKit is a huge improvement, it feels a lot like NextJS, with file system routing with fallback pages, server, and static rendering."
 			},
 			{
-				name: "Netlify Suite",
+				name: "Netlify",
 				description:
-					"I am a big fan of Netlify, they simplify many complex necessities of deploying projects. I am using Netlify to deploy my portfolio with the custom domain, using Netlify Forms for the contact form, and also plan on using Netlify CMS for blogging."
+					"I am a big fan of Netlify, they simplify many complex necessities of deploying projects. I am using Netlify to deploy my portfolio with a custom domain and using Netlify Forms for contact form submissions."
 			}
 		],
-		siteUrl: "https://albertopfunk.dev",
+		siteUrl: "",
 		githubUrl: "https://github.com/albertopfunk/portfolio-svelte-v2",
 		mediaUrl:
 			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",

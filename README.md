@@ -14,11 +14,12 @@ Visit the site by going to [albertopfunk.dev](https://albertopfunk.dev).
 
 ## General Info
 
-- 80s retro theme portfolio with in-page section navigation
+- synthwave/retrowave theme with in-page section navigation
 
 ## Technologies
 
 - Svelte with sveltekit
+- Netlify
 
 ## Setup
 
