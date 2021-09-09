@@ -59,7 +59,12 @@
 			<div class="description-container">
 				<h4>Description</h4>
 				<ContentSpacer size="xsm" />
-				<p>{project.description}</p>
+				{#each project.description as paragraph, index}
+					{#if index !== 0}
+						<br />
+					{/if}
+					<p>{paragraph}</p>
+				{/each}
 			</div>
 			<ContentSpacer size="xlg" />
 			<div class="flex-container" class:even={index % 2 === 0}>
@@ -196,12 +201,12 @@
 
 	.description-container {
 		width: 95%;
-		max-width: 650px;
+		max-width: 600px;
 		text-align: center;
 		margin: 0 auto;
 
 		@media (min-width: 1250px) {
-			max-width: 850px;
+			max-width: 700px;
 		}
 	}
 
