@@ -4,7 +4,7 @@ export const projectSectionData = readable([
 	{
 		name: "Tech Profiles",
 		description:
-			"The first version of this web app was my capstone project(when I attended Lambda School). It was a 5-week, team-built project where each team had a PM who would review PRs and merge them. I learned more in those five weeks than six months of self-learning. Building fully functioning web apps with a team and a deadline is such a great experience. I left the app as-is after the five weeks to show what we accomplished in that time. I started version 2, which I renamed to tech profiles, and have been working on it on the side since then. It is a discovery app for people in tech, where they can create a profile for others to see.",
+			"The first version of this web app was my capstone project(when I attended Lambda School). It was a 5-week, team-built project where each team had a PM who would review PRs and merge them. I learned more in those five weeks than six months of self-learning. Building fully functioning web apps with a team and a deadline is a great way to gain experience. During those five weeks, I mostly worked on the dashboard and worked with teammates to connect services. This app felt like a great way to gain experience due to its scalability, so I wanted to start from scratch to have hands-on experience building a project in its entirety. I left the app as-is after the five weeks to show what we accomplished in that time. I started version 2, which I renamed to tech profiles, and have been working on it on the side since then. It is a discovery app for people in tech, where they can create a profile for others to see.",
 		features: [
 			"Infinite scroll with pagination",
 			"Sort profiles",
