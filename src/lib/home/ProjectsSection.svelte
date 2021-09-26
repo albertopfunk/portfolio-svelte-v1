@@ -142,7 +142,7 @@
 		grid-template-columns: 1fr;
 		margin: 0 auto;
 
-		div {
+		.background, .title {
 			grid-row-start: 1;
 			grid-column-start: 1;
 		}
