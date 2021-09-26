@@ -19,17 +19,17 @@
 			.then(() => {
 				contactForm.reset();
 				submitStatus = submitStates.success;
-				setTimeout(() => {
-					submitStatus = submitStates.idle;
-				}, 1000);
 			})
 			.catch((error) => {
 				console.error("Error", error);
 				submitStatus = submitStates.error;
-				setTimeout(() => {
-					submitStatus = submitStates.idle;
-				}, 1000);
 			});
+	}
+
+	function resetOnSuccess() {
+		if (submitStatus === submitStates.success) {
+			submitStatus = submitStates.idle;
+		}
 	}
 </script>
 
@@ -57,7 +57,7 @@
 		<div>
 			<label for="name">Name:</label>
 			<ContentSpacer size="xsm" />
-			<input type="text" id="name" name="name" autocomplete="name" required />
+			<input type="text" id="name" name="name" autocomplete="name" required on:focus={resetOnSuccess} />
 		</div>
 		<div>
 			<label for="email">Email:</label>
@@ -68,12 +68,13 @@
 				name="email"
 				autocomplete="email"
 				required
+				on:focus={resetOnSuccess}
 			/>
 		</div>
 		<div>
 			<label for="message">Message:</label>
 			<ContentSpacer size="xsm" />
-			<textarea name="message" id="message" rows="10" required />
+			<textarea name="message" id="message" rows="10" required on:focus={resetOnSuccess} />
 		</div>
 		<div>
 			<button
@@ -95,6 +96,20 @@
 			</button>
 		</div>
 	</form>
+	<div
+		class="visually-hidden"
+		aria-live="polite"
+		aria-atomic="true"
+		aria-relevant="additions"
+	>
+		{#if submitStatus === submitStates.success}
+			successfully submitted form
+		{/if}
+
+		{#if submitStatus === submitStates.error}
+			error submitting form, try again
+		{/if}
+	</div>
 	<div class="mountains-container">
 		<svg
 			class="mountains"
