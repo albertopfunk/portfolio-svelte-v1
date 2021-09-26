@@ -177,6 +177,7 @@
 		.title-links {
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			gap: 10px;
 
 			.link {
