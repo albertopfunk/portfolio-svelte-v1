@@ -170,31 +170,26 @@ export const projectSectionData = readable([
 	// 	slug: "nomcue"
 	// },
 
-	// {
-	// 	name: "Conway's Game of Life",
-	// 	description: "Based on Conway's game of life.",
-	// 	features: [
-	// 		"Click on any cell to customize game",
-	// 		"Choose a preset",
-	// 		"Expand the number of cells"
-	// 	],
-	// 	tech: [
-	// 		{
-	// 			name: "React(CRA)",
-	// 			description:
-	// 				"lorem familiarity, big community, plenty of documentation, established, app feel"
-	// 		},
-	// 		{
-	// 			name: "Styled Components",
-	// 			description: "lorem simple to implement, customizable, great docs"
-	// 		}
-	// 	],
-	// 	siteUrl: "https://conwayknowslife.dev",
-	// 	githubUrl: "https://github.com/albertopfunk/Conways-Life",
-	// 	mediaUrl:
-	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
-	// 	slug: "game-of-life"
-	// },
+	{
+		name: "Conway's Game of Life",
+		description: "Built this as part of build week at Lambda School where we built week-long projects based on what we learned that month. Based on Conway's Game of Life, this app is a Turing complete simulation where you watch the evolution of cells throughout generations, determined by their initial state.",
+		features: [
+			"Click on any cell to customize initialization",
+			"Choose a preset pattern",
+			"Expand the number of cells"
+		],
+		tech: [
+			{
+				name: "React(CRA)/Styled-Components",
+				description: "The technology chosen was based on what we learned that month. If I were to start over, I would probably use Svelte and deploy it as a static application."
+			}
+		],
+		siteUrl: "https://conwayknowslife.dev",
+		githubUrl: "https://github.com/albertopfunk/Conways-Life",
+		mediaUrl:
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+		slug: "game-of-life"
+	},
 
 	{
 		name: "Portfolio",
