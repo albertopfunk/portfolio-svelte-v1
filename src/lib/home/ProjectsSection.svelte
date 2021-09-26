@@ -181,7 +181,13 @@
 			gap: 10px;
 
 			.link {
+				height: 2rem;
+				width: 2rem;
 				display: flex;
+
+				@media (min-width: 650px) {
+					width: 2.5rem;
+				}
 			}
 
 			& :global(a:focus svg.redViolet) {
@@ -190,12 +196,8 @@
 			}
 
 			& :global(svg) {
-				width: 2rem;
+				width: 100%;
 				height: auto;
-
-				@media (min-width: 650px) {
-					width: 2.5rem;
-				}
 			}
 		}
 	}
