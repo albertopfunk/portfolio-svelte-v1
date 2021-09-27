@@ -172,7 +172,7 @@ export const projectSectionData = readable([
 
 	{
 		name: "Conway's Game of Life",
-		description: "Built this as part of build week at Lambda School where we built week-long projects based on what we learned that month. Based on Conway's Game of Life, this app is a Turing complete simulation where you watch the evolution of cells throughout generations, determined by their initial state.",
+		description: ["Built this as part of build week at Lambda School where we would build week-long projects based on what we learned that month. Based on Conway's Game of Life, this app is a Turing complete simulation where you watch the evolution of cells throughout generations, determined by their initial state."],
 		features: [
 			"Click on any cell to customize initialization",
 			"Choose a preset pattern",
