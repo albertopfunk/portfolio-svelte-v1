@@ -111,7 +111,7 @@ export const projectSectionData = readable([
 		githubUrl:
 			"https://github.com/albertopfunk/Developer-Profiles-v2--tech-profiles",
 		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632802601/Portfolio/projects/techprofiles1.webp",
 		slug: "tech-profiles"
 	},
 
@@ -187,7 +187,7 @@ export const projectSectionData = readable([
 		siteUrl: "https://conwayknowslife.dev",
 		githubUrl: "https://github.com/albertopfunk/Conways-Life",
 		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632806444/Portfolio/projects/gameoflife2.webp",
 		slug: "game-of-life"
 	},
 
@@ -196,11 +196,7 @@ export const projectSectionData = readable([
 		description: [
 			"My portfolio is basically an open canvas for the things I enjoy. It's a bit out there but I am having a lot of fun building it. I am a big fan of sci-fi/fantasy and synthwave/retrowave type themes so I am making that a central theme of my portfolio. It still needs work and there are many items on my stretch list but I am excited to keep developing it!"
 		],
-		features: [
-			"In-page navigation",
-			"Reduced motion if preferred",
-			"Contact form"
-		],
+		features: [],
 		tech: [
 			{
 				name: "Svelte with SvelteKit",
@@ -216,7 +212,7 @@ export const projectSectionData = readable([
 		siteUrl: "",
 		githubUrl: "https://github.com/albertopfunk/portfolio-svelte-v2",
 		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+			"",
 		slug: "portfolio"
 	},
 	{
@@ -255,7 +251,7 @@ export const projectSectionData = readable([
 		siteUrl: "https://github.com/albertopfunk/Portfolio-Svelte-v1--DEMO",
 		githubUrl: "https://github.com/albertopfunk/rollup-plugin-fresh",
 		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632806804/Portfolio/projects/plugin-fresh.webp",
 		slug: "rollup-plugin-fresh"
 	}
 ]);

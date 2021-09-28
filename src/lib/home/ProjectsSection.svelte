@@ -68,18 +68,22 @@
 			</div>
 			<ContentSpacer size="xlg" />
 			<div class="flex-container" class:even={index % 2 === 0}>
-				<div class="image-container">
-					<img src={project.mediaUrl} alt="" />
-				</div>
-				<div class="features-container">
-					<h4>Features</h4>
-					<ContentSpacer size="xsm" />
-					<ul>
-						{#each project.features as feature}
-							<li>{feature}</li>
-						{/each}
-					</ul>
-				</div>
+				{#if project.mediaUrl}
+					<div class="image-container">
+						<img src={project.mediaUrl} alt="" />
+					</div>
+				{/if}
+				{#if project.features.length > 0}
+					<div class="features-container">
+						<h4>Features</h4>
+						<ContentSpacer size="xsm" />
+						<ul>
+							{#each project.features as feature}
+								<li>{feature}</li>
+							{/each}
+						</ul>
+					</div>
+				{/if}
 			</div>
 			<ContentSpacer size="xlg" />
 			<div class="tech-container">
