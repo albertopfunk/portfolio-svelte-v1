@@ -8,8 +8,10 @@
 <div class="spacer-container">
 	<div class="spacer-item">
 		<a href="https://twitter.com/albertopfunk" target="_blank" rel="noreferrer">
-			<span class="visually-hidden">twitter profile. opens in new tab</span>
-			<TwitterIcon hidden lightViolet />
+			<span>
+				<span class="visually-hidden">twitter profile. opens in new tab</span>
+				<TwitterIcon hidden lightViolet />
+			</span>
 		</a>
 
 		<a
@@ -17,22 +19,28 @@
 			target="_blank"
 			rel="noreferrer"
 		>
-			<span class="visually-hidden">linkedin profile. opens in new tab</span>
-			<LinkedinIcon hidden lightViolet />
+			<span>
+				<span class="visually-hidden">linkedin profile. opens in new tab</span>
+				<LinkedinIcon hidden lightViolet />
+			</span>
 		</a>
 	</div>
 
 	<div class="spacer-item">
 		<a href="#about-me" class="scroll-link">
-			<span class="visually-hidden">about me section</span>
-			<ScrollDownArrow hidden />
+			<span>
+				<span class="visually-hidden">about me section</span>
+				<ScrollDownArrow hidden />
+			</span>
 		</a>
 	</div>
 
 	<div class="spacer-item">
 		<a href="https://github.com/albertopfunk" target="_blank" rel="noreferrer">
-			<span class="visually-hidden">github profile. opens in new tab</span>
-			<GithubIcon hidden lightViolet />
+			<span>
+				<span class="visually-hidden">github profile. opens in new tab</span>
+				<GithubIcon hidden lightViolet />
+			</span>
 		</a>
 	</div>
 </div>
