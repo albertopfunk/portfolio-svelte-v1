@@ -79,7 +79,11 @@
 						<ContentSpacer size="xsm" />
 						<ul>
 							{#each project.features as feature}
-								<li>{feature}</li>
+								<li>
+									<span>
+										{feature}
+									</span>
+								</li>
 							{/each}
 						</ul>
 					</div>
@@ -119,7 +123,8 @@
 	}
 
 	h2 {
-		text-shadow: 5px 5px 0px var(--darkest-violet-color);
+		text-shadow: 0 0 30px rgba(var(--red-value), 0.5),
+			7px 7px 0px var(--darkest-violet-color);
 	}
 
 	h3 {
@@ -146,7 +151,8 @@
 		grid-template-columns: 1fr;
 		margin: 0 auto;
 
-		.background, .title {
+		.background,
+		.title {
 			grid-row-start: 1;
 			grid-column-start: 1;
 		}
@@ -184,13 +190,27 @@
 			align-items: center;
 			gap: 10px;
 
+			@media (min-width: 650px) {
+				gap: 15px;
+			}
+
+			@media (min-width: 1250px) {
+				gap: 20px;
+			}
+
 			.link {
 				height: 2rem;
 				width: 2rem;
 				display: flex;
 
 				@media (min-width: 650px) {
+					height: 2.5rem;
 					width: 2.5rem;
+				}
+
+				@media (min-width: 1250px) {
+					height: 3rem;
+					width: 3rem;
 				}
 			}
 
@@ -250,9 +270,6 @@
 				display: flex;
 				flex-direction: column;
 				gap: 15px;
-				list-style-type: circle;
-				list-style-type: disclosure-open;
-				list-style-position: inside;
 
 				@media (min-width: 650px) {
 					flex-direction: row;
@@ -266,6 +283,28 @@
 				@media (min-width: 650px) {
 					flex-basis: 45%;
 					text-align: center;
+				}
+
+				span {
+					padding-left: 1.5rem;
+
+					&:before {
+						content: " ";
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						background-image: url("/static/projects-bullet.svg");
+						background-size: 0.8rem 0.8rem;
+						height: 0.8rem;
+						width: 0.8rem;
+
+						@media (min-width: 1250px) {
+							background-size: 0.9rem 0.9rem;
+							height: 0.9rem;
+							width: 0.9rem;
+						}
+					}
 				}
 			}
 		}

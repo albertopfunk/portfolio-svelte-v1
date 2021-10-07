@@ -253,7 +253,6 @@
 
 	ul {
 		padding-left: 2rem;
-		list-style-position: outside;
 	}
 
 	ul li::before {
@@ -264,7 +263,7 @@
 		top: 50%;
 		bottom: 50%;
 		transform: translate(-50%, -50%);
-		background-image: url("/static/triangle-bullet.svg");
+		background-image: url("/static/intro-bullet.svg");
 		background-size: 0.8rem 0.8rem;
 		height: 0.8rem;
 		width: 0.8rem;
