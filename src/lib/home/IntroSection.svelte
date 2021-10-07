@@ -252,10 +252,22 @@
 	}
 
 	ul {
-		list-style-type: circle;
-		list-style-type: disclosure-open;
-		list-style-position: inside;
-		list-style-image: url("triangle-sm.svg");
+		padding-left: 2rem;
+		list-style-position: outside;
+	}
+
+	ul li::before {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: -1.5rem;
+		top: 50%;
+		bottom: 50%;
+		transform: translate(-50%, -50%);
+		background-image: url("triangle-bullet.svg");
+		background-size: 0.8rem 0.8rem;
+		height: 0.8rem;
+		width: 0.8rem;
 	}
 
 	@media (min-width: 850px) {
@@ -288,8 +300,10 @@
 			gap: unset;
 		}
 
-		ul {
-			list-style-image: url("triangle-lg.svg");
+		ul li::before {
+			background-size: 0.9rem 0.9rem;
+			height: 0.9rem;
+			width: 0.9rem;
 		}
 	}
 </style>
