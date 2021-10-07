@@ -264,7 +264,7 @@
 		top: 50%;
 		bottom: 50%;
 		transform: translate(-50%, -50%);
-		background-image: url("triangle-bullet.svg");
+		background-image: url("/static/triangle-bullet.svg");
 		background-size: 0.8rem 0.8rem;
 		height: 0.8rem;
 		width: 0.8rem;
