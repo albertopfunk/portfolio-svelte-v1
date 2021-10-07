@@ -11,7 +11,7 @@
 		<ContentSpacer size="sm" />
 		<h1 class="hero-heading">Alberto Preciado</h1>
 		<p class="hero-subheading">Front-End Developer</p>
-		<ContentSpacer size="xxlg-d" />
+		<ContentSpacer size="xlg-d" />
 		<div class="hero-sun" />
 	</div>
 	<PalmTreesSpacer />

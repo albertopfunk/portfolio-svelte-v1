@@ -94,7 +94,7 @@
 <PageNav {currentSection} />
 <main>
 	<HeroIntro bind:heroPosition />
-	<ContentSpacer size="xxlg-d" />
+	<ContentSpacer size="xlg-d" />
 	<IntroSection bind:introPosition {unObserveEl} />
 	<PalmTreesSpacer />
 	<ContentSpacer size="lg" />

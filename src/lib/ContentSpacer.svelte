@@ -8,8 +8,8 @@
 	class:md={size === "md"}
 	class:lg={size === "lg"}
 	class:xlg={size === "xlg"}
+	class:xlg-d={size === "xlg-d"}
 	class:xxlg={size === "xxlg"}
-	class:xxlg-d={size === "xxlg-d"}
 />
 
 <style lang="scss">
@@ -42,7 +42,7 @@
 		min-height: 30px;
 	}
 
-	.xxlg-d {
+	.xlg-d {
 		height: 30px;
 		min-height: 30px;
 
@@ -53,7 +53,7 @@
 	}
 
 	.xxlg {
-		height: 40px;
-		min-height: 40px;
+		height: 60px;
+		min-height: 60px;
 	}
 </style>
