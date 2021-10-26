@@ -48,8 +48,7 @@
 <style lang="scss">
 	.spacer-container {
 		width: 100%;
-		height: calc(40px + 90 * ((100vw - 300px) / 1300));
-		max-height: 130px;
+		height: clamp(45px, 8vw, 115px);
 		display: flex;
 		justify-content: center;
 	}
