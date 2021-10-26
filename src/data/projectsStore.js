@@ -110,8 +110,10 @@ export const projectSectionData = readable([
 		siteUrl: "https://techprofiles.dev",
 		githubUrl:
 			"https://github.com/albertopfunk/Developer-Profiles-v2--tech-profiles",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632802601/Portfolio/projects/techprofiles1.webp",
+		mediaUrl: {
+			startPath: "https://res.cloudinary.com/dy5hgr3ht/image/upload/",
+			endPath: "/v1632802601/Portfolio/projects/techprofiles1"
+		},
 		slug: "tech-profiles"
 	},
 
@@ -165,8 +167,10 @@ export const projectSectionData = readable([
 	// 	],
 	// 	siteUrl: "https://nomcue.com",
 	// 	githubUrl: "",
-	// 	mediaUrl:
-	// 		"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1625834432/Portfolio/portfolio-ex.webp",
+	// 	mediaUrl: {
+	// 		startPath: "https://res.cloudinary.com/dy5hgr3ht/image/upload/",
+	// 		endPath: "/v1625834432/Portfolio/portfolio-ex"
+	// 	},
 	// 	slug: "nomcue"
 	// },
 
@@ -186,8 +190,10 @@ export const projectSectionData = readable([
 		],
 		siteUrl: "https://conwayknowslife.dev",
 		githubUrl: "https://github.com/albertopfunk/Conways-Life",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632806444/Portfolio/projects/gameoflife2.webp",
+		mediaUrl: {
+			startPath: "https://res.cloudinary.com/dy5hgr3ht/image/upload/",
+			endPath: "/v1632806444/Portfolio/projects/gameoflife2"
+		},
 		slug: "game-of-life"
 	},
 
@@ -211,8 +217,7 @@ export const projectSectionData = readable([
 		],
 		siteUrl: "",
 		githubUrl: "https://github.com/albertopfunk/portfolio-svelte-v2",
-		mediaUrl:
-			"",
+		mediaUrl: {},
 		slug: "portfolio"
 	},
 	{
@@ -250,8 +255,10 @@ export const projectSectionData = readable([
 		],
 		siteUrl: "https://github.com/albertopfunk/Portfolio-Svelte-v1--DEMO",
 		githubUrl: "https://github.com/albertopfunk/rollup-plugin-fresh",
-		mediaUrl:
-			"https://res.cloudinary.com/dy5hgr3ht/image/upload/v1632806804/Portfolio/projects/plugin-fresh.webp",
+		mediaUrl: {
+			startPath: "https://res.cloudinary.com/dy5hgr3ht/image/upload/",
+			endPath: "/v1632806804/Portfolio/projects/plugin-fresh"
+		},
 		slug: "rollup-plugin-fresh"
 	}
 ]);

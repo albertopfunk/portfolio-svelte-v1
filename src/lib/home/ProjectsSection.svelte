@@ -67,11 +67,44 @@
 				{/each}
 			</div>
 			<ContentSpacer size="xlg" />
-			{#if project.mediaUrl || project.features.length > 0}
+			{#if project.mediaUrl?.startPath || project.features.length > 0}
 				<div class="flex-container" class:even={index % 2 === 0}>
 					{#if project.mediaUrl}
 						<div class="image-container">
-							<img src={project.mediaUrl} alt="" />
+							<picture>
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_550${project.mediaUrl.endPath}.webp`}
+									media="(max-width: 550px)"
+								/>
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_550${project.mediaUrl.endPath}.png`}
+									media="(max-width: 550px)"
+								/>
+
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_750${project.mediaUrl.endPath}.webp`}
+									media="(max-width: 750px)"
+								/>
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_750${project.mediaUrl.endPath}.png`}
+									media="(max-width: 750px)"
+								/>
+
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_1050${project.mediaUrl.endPath}.webp`}
+									media="(max-width: 1050px)"
+								/>
+								<source
+									srcSet={`${project.mediaUrl.startPath}c_scale,w_1050${project.mediaUrl.endPath}.png`}
+									media="(max-width: 1050px)"
+								/>
+
+								<source srcSet={`${project.mediaUrl.startPath}c_scale,w_1250${project.mediaUrl.endPath}.webp`} />
+								<img
+									src={`${project.mediaUrl.startPath}c_scale,w_1250${project.mediaUrl.endPath}.png`}
+									alt=""
+								/>
+							</picture>
 						</div>
 					{/if}
 					{#if project.features.length > 0}
